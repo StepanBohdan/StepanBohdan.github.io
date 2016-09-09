@@ -54,14 +54,24 @@
         </div>
         <div class="call">
         	<h3>(4492) 33-00-00</h3>
-        	<button class="consult">Заказать консультацию</button>
+        	<button type="button" class="consult" data-toggle="modal" data-target="#modal-consult">Заказать консультацию</button>
         </div>
         
         <!-- /.container-fluid -->
     </nav>
+    <h1>Полезный рацион на каждый день <br> с доставкой на дом</h1>
 	<section class="ration">
 		<div class="container">
-			<h1>Полезный рацион на каждый день с доставкой на дом</h1>
+			
+			<div class="day-ration center-block">
+				<h2>Попробуйте суточный рацион <br>со скидкой 30%!</h2>
+				<h1>560руб.</h1> <span>800руб.</span>
+				<form action="mailto:bohdanpolishchuk@gmail.com" method="post" enctype="text/plain">
+					<input class="name" type="text" value="Имя">
+					<input class="phone" type="text" value="Телефон">
+					<input class="btn-try" type="submit" value="Хочу попробовать!">
+				</form>
+			</div>
 		</div>
 	</section>
 	<section id="about">
@@ -69,11 +79,11 @@
 			<h1>О нас</h1>
 			<aside class="aside-left">
 				<div class="row">
-					<div class="col-lg-5">
+					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
 						<img src="img/about1.jpg" alt="image">
 						<span></span>
 					</div>
-					<div class="col-lg-7">
+					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"">
 						<h5>Кто мы такие?</h5>
 						<hr>
 						<p>Дорогие друзья, приветствуем Вас на странице заказа полезного питания. Нас зовут Александр и Дарья. <br>
@@ -81,11 +91,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="why-trust col-lg-6">
+					<div class="why-trust col-lg-6 col-md-6 col-sm-6 col-xs-12"">
 						<img src="img/about3.jpg" alt="image">
 						<span></span>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"">
 						<h5>Почему стоит доверить нам свой <br>рацион? </h5>
 						<hr>
 						<p>Дарья Сидорова - сертифицированный диетолог, мастер полезной выпечки и инструктор тренажерного зала. <br>
@@ -111,7 +121,7 @@
 					<div class="block-icon">
 						<span class="icon1"></span>
 					</div>
-					<p>Делаете заказ любым способом</p>
+					<p>Делаете заказ <br>любым способом</p>
 				</div>
 				<div class="arrow-right col-lg-2"></div>
 				<div class="col-lg-2">
@@ -148,7 +158,7 @@
 					<div class="block-icon">
 						<span class="icon5"></span>
 					</div>
-					<p>Курьер привозит заказ в удобное время и место</p>
+					<p>Курьер привозит заказ <br>в удобное время и место</p>
 				</div>
 				<div class="arrow-left col-lg-2">
 					
@@ -163,9 +173,35 @@
 			</div>
 		</div>
 	</section>
-	<section id="about">
+	<section id="numbers">
 		<div class="container">
 			<h1>Цифры о мастерской</h1>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="center-block">
+						<p>болле <span> 50 </span> <br>постоянных <br>клиентов</p>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="center-block">
+						<p>уже <span> 1435 </span>проготовленных <br>контейнеров еды</p>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="center-block">
+						<p><span>4 </span>часов в день <br>наши клиенти <br>в среднем экономят <br>времени</p>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="center-block">
+						<p><span>500 </span>рублей brстоимость среднего <br>рациона в день</p>
+					</div>
+					
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="zakaz">
@@ -173,14 +209,43 @@
 			<h1>Подбор рациона</h1>
 		</div>
 	</section>
-	<section id="why">
+	<section id="why" class="advantages">
 		<div class="container">
 			<h1>Преимущества</h1>
+			<div class="masonry">
+				<div class="item-advantages">
+					<img src="img/plus1.jpg" alt="image">
+					<div class="portfolio-box-caption">
+                    	<div class="portfolio-box-caption-content">
+                    	    <div class="project-category text-faded">
+                    	        Category
+                    	    </div>
+                    	    <div class="project-name">
+                    	        Project Name
+                    	    </div>
+                    	</div>
+                    </div>
+				</div>
+				<div class="item-advantages">
+					<img src="img/plus2.jpg" alt="image">
+				</div>
+				<div class="item-advantages">
+					<img src="img/plus3.jpg" alt="image">
+				</div>
+				<div class="item-advantages">
+					<img src="img/plus4.jpg" alt="image">
+				</div>
+				<div class="item-advantages">
+					<img src="img/plus5.jpg" alt="image">
+				</div>
+			</div>
 		</div>
 	</section>
 	<section id="comment" class="comment">
-		<div class="container">
+		
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<div class="container">
+			<h1>Отзывы довольних покупателей</h1>
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -190,28 +255,71 @@
 
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
-				  <div class="item active">
-				    <img src="..." alt="...">
+				  <div class="item active slider-item">
+				    <img src="img/comment1.jpg" alt="img">
+				    <div class="name-slider">
+						<p>Ирина MIX Михейкина <a href="https://vk.com/mikhej">
+							<i class="fa fa-vk" aria-hidden="true"></i>
+						</a></p>
+						
+				    </div>
 				    <div class="carousel-caption">
-				      ...
+				    	
+				     	 <div class="comment-text">
+				     	 	<p>А вы слышали, что есть жирное опасно?!  Что нужно кушать сбалансированно, белки, жиры, углеводы….? Составлять дневной рацион??? <br>
+Да стомилионов раз!)  Я вот все время вижу это в соцсетях, по телеку,  в журналах, да уж куда там!.... все друзья об этом трезвонят) «божечки! - думала я - они все жертвы моды!»! Ну и все в таком духе… <br>
+НО! Нужно придерживаться важного правила  - есть нужно как минимум 5 раз в день, причем углеводы в первой половине дня, а белок во второй.  А это значит что бизнес-ланчи не прокатят, и еду нужно готовить себе в контейнерах на весь день( <br>
+Если Вы тоже с тоской об этом думаете, то вот решение, которое я нашла для себя! <br>
+Студия правильного питания  #Vitae и мой диетолог  #dashafitnesbzik  такие молодцы! Здесь мне подобрали меню по моим вкусовым предпочтениям и по БЖУ  (реально прям спросили, что я люблю, а что нет), добавили в мой рацион новые продукты, которые я сама себе каждый день покупать и готовить ленюсь) И самое убойное!: я теперь каждый день ем десерты без калорий и углеводов, и без страха  поправиться) все эти прелести Вам привезут в любую точку города. <br>
+P.S.  Теперь я знаю «что такое съесть, что бы не поправиться»)
+</p>
+				     	 </div>
 				    </div>
 				  </div>
-				  <div class="item">
-				    <img src="..." alt="...">
+				  <div class="item slider-item">
+				    <img src="img/comment.jpg" alt="img">
+				    <div class="name-slider">
+						<p>Сергей Лийц <a href="#">
+							<i class="fa fa-vk" aria-hidden="true"></i>
+						</a></p>
+						
+				    </div>
 				    <div class="carousel-caption">
-				      ...
+				    	
+				     	 <div class="comment-text">
+				     	 	<p>Ребята открыли для меня абсолютно новый сервис, в котором сочетаются не только разработанная карта питания, но и колоссальную экономию времени! Я забыл про готовку, ненавистные очереди в гипермаркете и горы посуды. Спасибо за вкусную кухню и всегда своевременный привоз питания. </p>
+				     	 </div>
 				    </div>
 				  </div>
-				  ...
+				  <div class="item slider-item">
+				    <img src="img/comment3.jpg" alt="img">
+				    <div class="name-slider">
+						<p>Алена Федорова <a href="https://vk.com/fedorovaad">
+							<i class="fa fa-vk" aria-hidden="true"></i>
+						</a></p>
+						
+				    </div>
+				    <div class="carousel-caption">
+				    	
+				     	 <div class="comment-text">
+				     	 	<p>Я когда-то думала, что правильные питание - это не вкусно, уныло, есть нужно только траву и вареную куриную грудку...каждый раз впадала в уныние, когда приходилось сесть на очередную диету, но как же я ошибалась <br>
+То, что делают эти ребята - просто из разряда мистики. <br>
+Фантастически вкусео, всегда свежее, всегда радует глаз и душу. <br>
+Усомнилась в своих кулинарных способностях) <br>
+Не думала что правильное питание может быть на столько вкусным, не думала что на ночь можно есть кексы)))волшебство <br> 
+Советую всем, особенно тем кто хотят вкусно похудеть или вкусно соблюдать форму</p>
+				     	 </div>
+				    </div>
+				  </div>
 				</div>
 
 				<!-- Controls -->
 				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				  <span class="slide-left" aria-hidden="true"></span>
 				  <span class="sr-only">Previous</span>
 				</a>
 				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				  <span class="slide-right" aria-hidden="true"></span>
 				  <span class="sr-only">Next</span>
 				</a>
 			</div>
@@ -234,7 +342,7 @@
 				<div class="question-col col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="question">
 						<h2>Остались вопросы? Напишите нам!</h2>
-						<input id="" class="center-block" type="button" value="Задать вопрос">
+						<button type="button" class="center-block" data-toggle="modal" data-target="#modal-question">Задать вопрос</button>
 					</div>
 				</div>
 			</div>
@@ -248,7 +356,7 @@
 			</div>
 		
 			<div class="row">
-				<div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+				<div class="forma col-lg-7 col-md-7 col-sm-6 col-xs-12">
 					<h3>Made by <a href="www.formasite.ru">Forma</a></h3>
 				</div>
 				<div class="soc-block col-lg-5 col-md-5 col-sm-6 col-xs-12">
@@ -264,7 +372,42 @@
 		</div>
 	</footer>
 	<a href=""><input class="btn-zakaz" type="button" value="Сделать заказ">
-</a>	<script src="js/bootstrap.min.js"></script>
+	</a>
+	<!-- Modal -->
+	<div class="modal fade" id="modal-consult" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
+		    </div>
+		    <div class="modal-body">
+		    	<input type="text" value="Ваше имя">
+		    	<input type="text" value="Вашa почта">
+		    	<button type="button" class="btn-send" data-dismiss="modal">Отправить</button>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
+		    </div>
+		    <div class="modal-body">
+		    	<input type="text" value="Ваше имя">
+		    	<input type="text" value="Вашa почта">
+		    	<button type="button" class="btn-send" data-dismiss="modal">Отправить</button>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
 </body>
 </html>
