@@ -66,9 +66,9 @@
 			<div class="day-ration center-block">
 				<h2>Попробуйте суточный рацион <br>со скидкой 30%!</h2>
 				<h1>560руб.</h1> <span>800руб.</span>
-				<form action="mailto:bohdanpolishchuk@gmail.com" method="post" enctype="text/plain">
-					<input class="name" type="text" value="Имя">
-					<input class="phone" type="text" value="Телефон">
+				<form action="post.php" method="POST">
+					<input class="name" type="text" value="Имя" name="name" required="required">
+					<input class="phone" type="text" value="Телефон" name="phone" required="required">
 					<input class="btn-try" type="submit" value="Хочу попробовать!">
 				</form>
 			</div>
