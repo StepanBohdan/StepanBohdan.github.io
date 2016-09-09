@@ -177,13 +177,13 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	height: 192px;
 }
 .icon4 {
-	background: url(../img/sprite.png) 0 -628px;
+	background: url(../img/sprite.png) 0 -627px;
 	position: absolute;
 	width: 196px;
 	height: 192px;
 }
 .icon5 {
-	background: url(../img/sprite.png) 0 -840px;
+	background: url(../img/sprite.png) 0 -839px;
 	position: absolute;
 	width: 196px;
 	height: 192px;
@@ -278,7 +278,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 .result h2 {
 	display: inline-block;
-	padding: 20px 0 32px;
+	padding: 20px 25px 32px;
 	text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
 
 }
@@ -302,86 +302,88 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 #why > .container {
 	max-width: 1200px
 }
+#why h1 {
+	margin: 20px auto 50px;
+}
 .item-advantages1 {
 	position: relative;
 	display: inline-block;
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 	margin: 0 15px;
 }
 .item-advantages1 > .advan-img {
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 }
 .item-advantages1 > .advan-img-dark {
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 }
 .item-advantages2 {
 	position: relative;
 	display: inline-block;
-	width: 740px;
-	height: 240px;
+	width: 643px;
+  height: 200px;
 	margin: 0 15px;
 }
 .item-advantages2 > .advan-img {
-	width: 740px;
-	height: 240px;
+	width: 643px;
+  height: 200px;
 }
 .item-advantages2 > .advan-img-dark {
-	width: 740px;
-	height: 240px;
+	width: 643px;
+  height: 200px;
 }
 .item-advantages3 {
 	position: relative;
 	display: inline-block;
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 	margin: 0 15px;
 }
 .item-advantages3 > .advan-img {
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 }
 .item-advantages3 > .advan-img-dark {
-	width: 470px;
-	height: 320px;
+	width: 380px;
+  height: 280px;
 }
 .item-advantages4 {
 	position: relative;
 	display: inline-block;
 	width: 320px;
-	height: 470px;
+  height: 360px;
 	margin: 0 15px;
 }
 .item-advantages4 > .advan-img {
 	width: 320px;
-	height: 470px;
+  height: 360px;
 }
 .item-advantages4 > .advan-img-dark {
 	width: 320px;
-	height: 470px;
+  height: 360px;
 }
 .item-advantages5 {
 	position: relative;
 	display: inline-block;
 	width: 320px;
-	height: 470px;
+  height: 360px;
 	margin: 0 15px;
 }
 .item-advantages5 > .advan-img {
 	width: 320px;
-	height: 470px;
+  height: 360px;
 }
 .item-advantages5 > .advan-img-dark {
 	width: 320px;
-	height: 470px;
+  height: 360px;
 }
 
 .advan-img {
 	overflow:hidden;
-	width: 480px;
-	height:250px;
+	
 	position: relative;
 
 }
@@ -407,15 +409,70 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 .advan-text {
 	position: absolute;
-    top: 50%;
+    top: 25%;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     left: 50%;
-    margin-left: -116px;
+	margin-left: -88px;
+    font-size: 18px;
 }
+.advan-text2 {
+	margin-left: -150px;
+}
+.advan-text4, .advan-text5 {
+	margin-left: -75px;
+}
+
+
+.grid {
+  max-width: 1045px;
+  height: 620px !important;
+  margin: auto;
+}
+
+/* ---- grid-item ---- */
+.grid-item {
+  float: left;
+}
+.grid-item1 {
+  width: 380px;
+  height: 280px;
+  position: absolute;
+    left: 0px !important;
+    top: 0px !important;
+}
+.grid-item2{
+  width: 643px;
+  height: 200px;
+  position: absolute;
+    left: 383px !important;
+    top: 0px !important;
+}
+.grid-item3 {
+  width: 380px;
+  height: 280px;
+  position: absolute;
+    left: 0px !important;
+    top: 283px !important;
+}
+.grid-item4 {
+  width: 320px;
+  height: 360px;
+  position: absolute;
+  left: 383px !important;
+    top: 203px !important;
+}
+.grid-item5 {
+  width: 320px;
+  height: 360px;
+  position: absolute;
+    left: 706px !important;
+    top: 203px !important;
+}
+
 
 
 #comment .carousel {
