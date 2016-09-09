@@ -315,7 +315,62 @@
 	<section id="why" class="advantages">
 		<div class="container">
 			<h1>Преимущества</h1>
-			<div class="masonry">
+
+			<div class="grid">
+
+				<div class="grid-item grid-item1 item-advantages1">
+					<div class="advan-img">
+						<img src="img/plus1.jpg" alt="image">
+					</div>
+					<div class="advan-img-dark">
+						
+					</div>
+					<p class="advan-text advan-text1">Здоровье <br>Полезное питание -<br> основа для здоровья</p>
+				</div>
+
+				<div class="grid-item grid-item2 item-advantages2">
+					<div class="advan-img">
+						<img src="img/plus2.jpg" alt="image">
+					</div>
+					<div class="advan-img-dark">
+						
+					</div>
+					<p class="advan-text advan-text2">Cкажи "нет" магазинам и очередям!</p>
+				</div>
+
+				<div class="grid-item grid-item3 item-advantages3">
+					<div class="advan-img">
+						<img src="img/plus3.jpg" alt="image">
+					</div>
+					<div class="advan-img-dark">
+						
+					</div>
+					<p class="advan-text advan-text3">Ощутимые результаты <br> в спорте <br>и медицинской диете</p>
+				</div>
+
+				<div class="grid-item grid-item4 item-advantages4">
+					<div class="advan-img">
+						<img src="img/plus4.jpg" alt="image">
+					</div>
+					<div class="advan-img-dark">
+						
+					</div>
+					<p class="advan-text advan-text4">Экономьте время <br>для более <br>важных вещей</p>
+				</div>
+				<div class="grid-item grid-item5 item-advantages5">
+					<div class="advan-img">
+						<img src="img/plus5.jpg" alt="image">
+					</div>
+					<div class="advan-img-dark">
+						
+					</div>
+					<p class="advan-text advan-text5">Профессиональный <br>диетолог подбирает <br>рацион бесплатно</p>
+				</div>
+
+			</div>
+
+
+			<!-- <div class="masonry">
 				<div class="item-advantages1">
 					<div class="advan-img">
 						<img src="img/plus1.jpg" alt="image">
@@ -361,7 +416,7 @@
 					</div>
 					<p class="advan-text">Профессиональный диетолог подбирает рацион бесплатно</p>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<section id="comment" class="comment">
@@ -532,7 +587,13 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
+	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
 	<script type="text/javascript">
+		$('.grid').masonry({
+		  itemSelector: '.grid-item',
+		  columnWidth: 160
+		});
+
 	$(document).ready(function(){
 		$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
 		  // alert('subdmit');
