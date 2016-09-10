@@ -238,11 +238,11 @@
 							<div class="choose-menu">
 								<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-									<input class="input-callorie" data-pack-type='start' type="text" required="required">
+									<input class="input-callorie" data-pack-type='standart' type="text" required="required">
 									<h4 class="callorie">Ккал</h4>
 								</div>
 								<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-									<input class="input-num-food" data-pack-type='start' type="text" >
+									<input class="input-num-food" data-pack-type='standart' type="text" >
 									<h4 class="num-food">Приемы <br>пищи</h4>
 								</div>
 							</div>
@@ -257,11 +257,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 						<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" data-pack-type='start' type="text" required="required">
+								<input class="input-callorie" data-pack-type='sport' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" data-pack-type='start' type="text">
+								<input class="input-num-food" data-pack-type='sport' type="text">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -274,11 +274,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" data-pack-type='start' type="text" required="required">
+								<input class="input-callorie" data-pack-type='premium' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-	 						<input class="input-num-food" data-pack-type='start' type="text">
+	 						<input class="input-num-food" data-pack-type='premium' type="text">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 							<h3>+ Личный диетолог и повар</h3>
@@ -303,23 +303,45 @@
 					
 				</div>
 			</div>
-			<div class="row menu-row">
 			<h1>Меню на день</h1>
+			<div class="row menu-row">
+				
 				<div class="col-lg-12">
-					<div class="col-lg-2">
-						<h2>Ланч</h2>
+					<div class="col-lg-3">
+						<h2>Завтрак:</h2>
 					</div>
 					<div class="col-lg-2">
-						<h2>Ланч</h2>
+						<h2>763 Ккал</h2>
+					</div>
+					<div class="col-lg-2">
+						<h2>65 Белков</h2>
+					</div>
+					<div class="col-lg-2">
+						<h2>25 Жиров</h2>
 					</div>
 					<div class="col-lg-3">
-						<h2>Ланч</h2>
+						<h2>70 Углеводов</h2>
 					</div>
-					<div class="col-lg-2">
-						<h2>Ланч</h2>
-					</div>
-					<div class="col-lg-3">
-						<h2>Ланч</h2>
+				</div>
+			
+				<h3>Творожная запеканка из фермерского творога с изюмом и сметаной</h3>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="col-lg-3">
+							<h2>Завтрак:</h2>
+						</div>
+						<div class="col-lg-2">
+							<h2>763 Ккал</h2>
+						</div>
+						<div class="col-lg-2">
+							<h2>65 Белков</h2>
+						</div>
+						<div class="col-lg-2">
+							<h2>25 Жиров</h2>
+						</div>
+						<div class="col-lg-3">
+							<h2>70 Углеводов</h2>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -612,10 +634,10 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 		function calc(){
 			var total = 0;
 			var data = {
-				'start' : {'kkal' : 763, 'price' : 100},
-				'standart' : {'kkal' : 863, 'price' : 200},
-				'sport' : {'kkal' : 963, 'price' : 300},
-				'premium' : {'kkal' : 1063, 'price' : 400}
+				'start' : {'kkal' : 880, 'price' : 600},
+				'standart' : {'kkal' : 763, 'price' : 900},
+				'sport' : {'kkal' : 1193, 'price' : 1000},
+				'premium' : {'kkal' : 1270, 'price' : 1150}
 			}
 		
 			for (key in data)
