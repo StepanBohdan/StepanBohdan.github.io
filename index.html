@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 	<nav id="mainNav" class="nav-menu navbar navbar-default navbar-fixed-top">
@@ -48,21 +48,20 @@
                     <li>
                         <a class="page-scroll" href="#contacts">Контакты</a>
                     </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <div class="call">
+                </ul><div class="call">
         	<h3>(4492) 33-00-00</h3>
         	<button type="button" class="consult" data-toggle="modal" data-target="#modal-consult">Заказать консультацию</button>
         </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        
         
         <!-- /.container-fluid -->
     </nav>
-    <h1>Полезный рацион на каждый день <br> с доставкой на дом</h1>
+    <h1 class="header-h1">Полезный рацион на каждый день <br> с доставкой на дом</h1>
 	<section class="ration">
 		<div class="container">
-			
 			<div class="day-ration center-block">
 				<h2>Попробуйте суточный рацион <br>со скидкой 30%!</h2>
 				<h1>560руб.</h1> <span>800руб.</span>
@@ -74,6 +73,7 @@
 			</div>
 		</div>
 	</section>
+	<div class="clearfix"></div>
 	<section id="about">
 		<div class="container">
 			<h1>О нас</h1>
@@ -81,7 +81,7 @@
 				<div class="row">
 					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
 						<img src="img/about1.jpg" alt="image">
-						<span></span>
+						<span class="brokol-i"></span>
 					</div>
 					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"">
 						<h5>Кто мы такие?</h5>
@@ -93,7 +93,7 @@
 				<div class="row">
 					<div class="why-trust col-lg-6 col-md-6 col-sm-6 col-xs-12"">
 						<img src="img/about3.jpg" alt="image">
-						<span></span>
+						<span class="grapes-i"></span>
 					</div>
 					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"">
 						<h5>Почему стоит доверить нам свой <br>рацион? </h5>
@@ -117,44 +117,42 @@
 			<h1>Как мы работаем</h1>
 			<div class="row work-row">
 				<div class="col-lg-1"></div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
 						<span class="icon1"></span>
 					</div>
 					<p>Делаете заказ <br>любым способом</p>
 				</div>
 				<div class="arrow-right col-lg-2"></div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
 						<span class="icon2"></span>
 					</div>
 					<p>Общаетесь с менеджером</p>
 				</div>
 				<div class="arrow-right col-lg-2"></div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
 						<span class="icon3"></span>
 					</div>
 					<p>Внесите оплату</p>
 				</div>
 				<div class="col-lg-1"></div>
-			</div>
-
-			<div class="row">
+			
 				<div class="col-lg-11"></div>
 				<div class="arrow-down col-lg-1"></div>
-			</div>
+			
 
-			<div class="row work-row">
+
 				<div class="col-lg-1"></div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
-						<span class="icon4"></span>
+						<span class="icon6"></span>
 					</div>
-					<p>Мы готовим заказ</p>
+					<p>Вы счастливы!</p>
 				</div>
 				<div class="arrow-left col-lg-2"></div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
 						<span class="icon5"></span>
 					</div>
@@ -163,11 +161,11 @@
 				<div class="arrow-left col-lg-2">
 					
 				</div>
-				<div class="col-lg-2">
+				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
 					<div class="block-icon">
-						<span class="icon6"></span>
+						<span class="icon4"></span>
 					</div>
-					<p>Вы счастливы!</p>
+					<p>Мы готовим заказ</p>
 				</div>
 				<div class="col-lg-1"></div>
 			</div>
@@ -283,8 +281,10 @@
 				<div class="col-lg-12">
 					<div class="result">
 						<h2>Итого ваш рацион в день: <span> 600 руб.</span></h2>
-
-						<button class="btn-booking">Оформить заказ</button>
+						<div class="center-booking">
+							<button class="btn-booking">Оформить заказ</button>
+						</div>
+						
 					</div>
 					
 				</div>
@@ -525,10 +525,10 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 				</div>
 			</div>
 			<div class="row">
-				<div class="map-yandex col-lg-5 col-md-4 col-sm-12 col-xs-12">
+				<div class="map-yandex col-lg-5 col-md-4 col-sm-6 col-xs-12">
 					<img src="img/contact3.jpg" alt="image">
 				</div>
-				<div class="map-yandex col-lg-7 col-md-8 col-sm-12 col-xs-12">
+				<div class="map-yandex col-lg-7 col-md-8 col-sm-6 col-xs-12">
 					<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZrfuZ7m" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
@@ -584,7 +584,7 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 		  </div>
 		</div>
 	</div>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
 	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
