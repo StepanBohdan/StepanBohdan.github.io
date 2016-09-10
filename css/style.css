@@ -28,7 +28,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	padding: 5px;
 	border: 2px solid #62c5cf;
 	border-radius: 14px;
-	margin: 0 10px 0 0;
+	margin: 3px 10px 0 0;
 	font-family: 'Lobster', cursive;
 }
 .nav-menu li a {
@@ -124,6 +124,46 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 #numbers {
 	background: #96e0dc;
 	padding: 0 0 40px 0;
+	position: relative;
+}
+#comment {
+	position: relative;
+}
+.wave-numbers {
+	background: url(../img/wave.png) 0 0px;
+	position: absolute;
+	left: 0px;
+	top: -5px;
+	width: 100%;
+	height: 11px;
+	background-repeat: repeat-x;
+}
+.wave-numbers2 {
+    background: url(../img/wave2.png) 0 0px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 10px;
+    background-repeat: repeat-x;
+}
+.wave3-sprite {
+	background: url(../img/sprite-wave1.png) 0 -29px;
+	position: absolute;
+	left: 0px;
+	bottom: -9px;
+	width: 100%;
+	height: 10px;
+	background-repeat: repeat-x;
+}
+.wave2-sprite {
+	background: url(../img/sprite-wave1.png) 0 0px;
+	position: absolute;
+	left: 0px;
+	top: -10px;
+	width: 100%;
+	height: 10px;
+	background-repeat: repeat-x;
 }
 #numbers h1 {
 	margin: 40px 0 40px;
@@ -239,7 +279,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     height: 200px;
 }
 #zakaz {
-	background-color: #eaf7f9;
+	background-color: #e8f5ed;
 	color: #5b5a5f;
 	position: relative;
 }
@@ -332,6 +372,18 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 }
 .center-booking {
 	display: inline-block;
+}
+.num-day {
+    border: none;
+    border-radius: 18px;
+    text-align: center;
+    font-family: "Lobster",cursive;
+    font-size: 24px;
+    margin: 0px 12px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 90, 95);
+    padding: 7px 25px 9px;
+    max-width: 120px;
 }
 .btn-booking {
 	border: none;
@@ -525,7 +577,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 
 #comment .carousel {
-	background: #eaf7f9;
+	background: #e8f5ed;
 	height: 825px;
 }
 #comment .carousel-inner img {
@@ -697,6 +749,7 @@ footer i {
 
 .modal .modal-dialog {
 	width: 300px;
+	margin-top: 80px;
 }
 .modal .modal-content {
 	border-radius: 50%;
@@ -989,7 +1042,7 @@ h2.modal-title {
 
 
 @media (max-width: 1199px) {
-	.ration-grapes, .ration-grapes2, .grapes-i, .brokol-i {
+	.ration-grapes, .ration-grapes2, .grapes-i, .brokol-i, .blueberry {
 		display: none;	
 	}
 
@@ -1002,7 +1055,7 @@ h2.modal-title {
 	    float: none;
 	    margin: 10px auto;
 	    display: block;
-	    width: 449px;
+	    width: 466px;
 	}
 	.navbar-collapse .navbar-nav>li>a {
 		padding: 0;
@@ -1030,16 +1083,16 @@ h2.modal-title {
 		margin: 0px 0;
 	}
 	.consult {
-    	background: #62c5cf;
-    	color: #5b5a5f;
-    	text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
-    	border: none;
-    	border-radius: 16px;
-    	max-width: 240px;
-    	font-family: 'Lobster', cursive;
-    	font-size: 14px;
-    	padding: 4px 15px;
-    }
+	    background: #62c5cf;
+	    color: #5b5a5f;
+	    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
+	    border: none;
+	    border-radius: 16px;
+	    max-width: 240px;
+	    font-family: 'Lobster', cursive;
+	    font-size: 12px;
+	    padding: 4px 5px;
+	}
     body h1 {
 		font-size: 32px;
 		text-align: center;
@@ -1219,8 +1272,15 @@ h2.modal-title {
 	    border-radius: 20px;
 	    height: 380px;
 	}
+	.day-ration span {
+    	font-size: 20px;
+	}
+	.day-ration h1 {
+  		margin: 0 10px 0 10px;
+   		font-size: 34px;
+	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.call {
 	    display: block;
 	    float: right;
@@ -1246,7 +1306,7 @@ h2.modal-title {
 	    color: #fff;
 	    padding: 0;
 	    border-radius: 20px;
-	    height: 280px;
+	    height: 380px;
 	}
 }
 @media (max-width: 540px) {
@@ -1305,7 +1365,15 @@ h2.modal-title {
 	    line-height: 1.5;
 	    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
 	}
+	.navbar-collapse .navbar-nav {
+	    float: none;
+	    margin: 10px auto;
+	    display: block;
+	    width: 300px;
+	}
+
 }
+
 @media (max-width: 440px) {
 	.col-name_menu {
 	    background: #62c5cf;
