@@ -213,11 +213,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 						<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" type="text" required="required">
+								<input class="input-callorie" data-pack-type='start' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" type="text" required="required">
+								<input class="input-num-food" data-pack-type='start' type="text" required="required">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -230,11 +230,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 						<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" type="text" required="required">
+								<input class="input-callorie" data-pack-type='standart' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" type="text" required="required">
+								<input class="input-num-food" data-pack-type='standart' type="text" required="required">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -247,11 +247,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 						<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" type="text" required="required">
+								<input class="input-callorie" data-pack-type='sport' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" type="text" required="required">
+								<input class="input-num-food" data-pack-type='sport' type="text" required="required">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -264,11 +264,11 @@
 						<div class="choose-menu">
 							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
 							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" type="text" required="required">
+								<input class="input-callorie" data-pack-type='premium' type="text" required="required">
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-	 						<input class="input-num-food" type="text" required="required">
+	 						<input class="input-num-food" type="text" data-pack-type='premium' required="required">
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 							<h3>+ Личный диетолог и повар</h3>
@@ -282,7 +282,7 @@
 					<div class="result">
 						<h2>Итого ваш рацион в день: <span> 600 руб.</span></h2>
 						<div class="center-booking">
-							<button class="btn-booking">Оформить заказ</button>
+							<button class="btn-booking" onClick="calc()">Оформить заказ</button>
 						</div>
 						
 					</div>
@@ -560,11 +560,9 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
 		    </div>
 		    <div class="modal-body">
-		    <form id="form" action="send.php" method="POST">
-		    	<input type="text" value="Ваше имя" required="required">
-		    	<input type="email" value="Вашa почта" required="required">
-		    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
-		    </form>
+		    	<input type="text" value="Ваше имя">
+		    	<input type="text" value="Вашa почта">
+		    	<button type="button" class="btn-send" data-dismiss="modal">Отправить</button>
 		    </div>
 		  </div>
 		</div>
@@ -579,11 +577,9 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
 		    </div>
 		    <div class="modal-body">
-		    <form id="form" action="send.php" method="POST">
-		    	<input type="text" value="Ваше имя" required="required">
-		    	<input type="email" value="Вашa почта" required="required">
-		    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
-		    </form>
+		    	<input type="text" value="Ваше имя">
+		    	<input type="text" value="Вашa почта">
+		    	<button type="button" class="btn-send" data-dismiss="modal">Отправить</button>
 		    </div>
 		  </div>
 		</div>
@@ -593,6 +589,30 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
 	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
 	<script type="text/javascript">
+		
+		function calc(){
+			var total = 0;
+			var data = {
+				'start' : {'kkal' : 763, 'price' : 100},
+				'standart' : {'kkal' : 863, 'price' : 200},
+				'sport' : {'kkal' : 963, 'price' : 300},
+				'premium' : {'kkal' : 1063, 'price' : 400}
+			}
+		
+			for (key in data)
+			{
+				food_count = $('.input-num-food[data-pack-type="'+key+'"]').val();
+				if (food_count == ""){
+					food_count = 0;
+					$('.input-num-food[data-pack-type="'+key+'"]').val(0);
+				} 
+				$('.input-callorie[data-pack-type="'+key+'"]').val(data[key].kkal*food_count); 
+				total += data[key].price*food_count;
+			}
+			$('.result h2 span').text(total+'руб');
+		}
+
+
 		$('.grid').masonry({
 		  itemSelector: '.grid-item',
 		  columnWidth: 160
