@@ -144,7 +144,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 
 #zakaz h1 {
-	margin: 40px 0 0 0;
+	margin: 40px 0;
 }
 
 
@@ -152,16 +152,22 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	margin: 80px 0 40px;
 }
 .grapes-i {
-	background: url(../img/sprite.png) 0 -2000px;
+	background: url(../img/sprite.png) 0px -2071px;
 	position: relative;
-	left: 0;
-	top: 0;
+	left: 244px;
+	top: 210px;
+	width: 156px;
+	height: 116px;
+	position: absolute;
 }
 .brokol-i {
-	background: url(../img/sprite.png) 0 -2200px;
+	background: url(../img/sprite.png) -97px -1968px;
 	position: relative;
-	left: 0;
-	top: 0;
+	left: -28px;
+	top: 144px;
+	width: 109px;
+	height: 100px;
+	position: absolute;
 }
 
 #work {
@@ -235,6 +241,23 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 #zakaz {
 	background-color: #eaf7f9;
 	color: #5b5a5f;
+	position: relative;
+}
+.border-colname {
+	border: 7px solid rgb(116, 185, 219);
+	border-radius: 30px;
+	padding: 0px 4px 4px;
+}
+.border-colname .col-name_menu h2 {
+	margin-top: 5px;
+}
+.blueberry {
+	background: url(../img/sprite.png) 0 -1968px;
+	position: absolute;
+	width: 93px;
+	height: 100px;
+	left: 215px;
+	top: 550px;
 }
 .col-name_menu {
 	background-color: #62c5cf;
@@ -242,12 +265,20 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	padding: 0;
 	border-radius: 20px;
 }
+.cnm-margin80 {
+	margin-top: 88px;
+}
 .col-name_menu h2 {
 	background-color: #5b5a5f;
 	color: #fff;
 	padding: 30px 35px;
 	border-radius: 20px;
 	text-align: center;
+	margin-top: 10px;
+}
+.good-price {
+	color: rgb(116, 185, 219);
+	font-size: 26px;
 }
 .choose-menu {
 	padding: 15px;
@@ -259,6 +290,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	font-size: 24px;
 	font-family: 'Lobster', cursive;
 	max-width: 100px;
+	color: #5b5a5f;
 }
 .choose-menu h3 {
 	color: #fff;
@@ -268,12 +300,12 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 .callorie {
 	display: inline-block;
 	text-align: center;
-	width: 100px;
+	width: 96px;
 }
 .num-food {
 	display: inline-block;
 	text-align: center;
-	width: 100px;
+	width: 96px;
 }
 .choose-menu .col-callorie {
 	padding: 0;
@@ -285,17 +317,21 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 .result {
 	background-color: #62c5cf;
 	border-radius: 20px;
-	margin: 40px auto; 
+	margin: 40px auto;
+	z-index: 11;
+	position: relative;
 }
 .result h2 {
 	display: inline-block;
 	padding: 20px 25px 32px;
 	text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
-
 }
 .result span {
 	color: #fff;
 	text-shadow: none;
+}
+.center-booking {
+	display: inline-block;
 }
 .btn-booking {
 	border: none;
@@ -723,14 +759,33 @@ h2.modal-title {
     font-size: 38px;
     font-weight: 300;
 }
-
-
 .modal {
 	z-index: 11111;
+}
+.ration-grapes {
+	background: url(../img/sprite.png) 0px -1761px;
+	right: 10px;
+	top: 20px;
+	width: 192px;
+	height: 200px;
+	position: absolute;
+}
+.ration-grapes2 {
+	background: url(../img/sprite.png) 0px -1545px;
+	left: -36px;
+	top: 93px;
+	width: 195px;
+	height: 205px;
+	position: absolute;
 }
 
 
 
+
+
+
+
+/*  --------------------------- MEDIA ---------------------------- */
 
 @media (min-width: 1200px) {
 	.col-name_menu {
@@ -934,6 +989,10 @@ h2.modal-title {
 
 
 @media (max-width: 1199px) {
+	.ration-grapes, .ration-grapes2, .grapes-i, .brokol-i {
+		display: none;	
+	}
+
 	.aside-right span {
     	font-size: 26px;
     	font-family: 'Lobster', cursive;
@@ -1170,17 +1229,18 @@ h2.modal-title {
 	    right: 50%;
 	    top: 1px;
 	    margin-right: -90px;
-	}.aside-right {
-    width: 28%;
-    display: block;
-    float: right;
-}
-#why {
-	display: none;
-}
+	}
+	.aside-right {
+	    width: 28%;
+	    display: block;
+	    float: right;
+	}
+	#why {
+		display: none;
+	}
 
 }
-@media (max-width: 990px) and (min-width: 541px){
+@media (max-width: 990px) and (min-width: 441px){
 	.col-name_menu {
 	    background: #62c5cf;
 	    color: #fff;
@@ -1202,53 +1262,56 @@ h2.modal-title {
 	    float: none;
 	    margin:  auto;
 	}
+
+	.btn-zakaz {
+	    background: #62c5cf;
+	    color: #5b5a5f;
+	    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
+	    -webkit-transform: rotate(-90deg);
+	    -moz-transform: rotate(-90deg);
+	    -o-transform: rotate(-90deg);
+	    transform: rotate(-90deg);
+	    position: fixed;
+	    left: -50px;
+	    top: 50%;
+	    padding: 5px 20px 10px;
+	    border: none;
+	    border-radius: 15px;
+	    font-family: 'Lobster', cursive;
+	    z-index: 10000;
+	    font-size: 15px;
+	}
+	#comment .carousel {
+	    background: #eaf7f9;
+	    height: auto;
+	}
+	.day-ration {
+	    max-width: 300px;
+	    padding: 15px 5px;
+	}
+	.day-ration input {
+	    border: none;
+	    border-radius: 18px;
+	    text-align: center;
+	    font-family: 'Lobster', cursive;
+	    font-size: 22px;
+	    margin: 0 12px 0 0;
+	}
+	.day-ration h2 {
+		font-size: 22px;
+	    display: inline-block;
+	    margin: 0;
+	    text-align: center;
+	    line-height: 1.5;
+	    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
+	}
+}
+@media (max-width: 440px) {
 	.col-name_menu {
-    background: #62c5cf;
-    color: #fff;
-    padding: 0;
-    border-radius: 20px;
-    height: 440px;
-}
-.btn-zakaz {
-    background: #62c5cf;
-    color: #5b5a5f;
-    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-    position: fixed;
-    left: -50px;
-    top: 50%;
-    padding: 5px 20px 10px;
-    border: none;
-    border-radius: 15px;
-    font-family: 'Lobster', cursive;
-    z-index: 10000;
-    font-size: 15px;
-}
-#comment .carousel {
-    background: #eaf7f9;
-    height: auto;
-}
-.day-ration {
-    max-width: 300px;
-    padding: 15px 5px;
-}
-.day-ration input {
-    border: none;
-    border-radius: 18px;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: 22px;
-    margin: 0 12px 0 0;
-}
-.day-ration h2 {
-	font-size: 22px;
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    line-height: 1.5;
-    text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
-}
+	    background: #62c5cf;
+	    color: #fff;
+	    padding: 0;
+	    border-radius: 20px;
+	    height: 440px;
+	}
 }
