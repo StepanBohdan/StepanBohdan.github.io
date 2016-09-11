@@ -332,6 +332,15 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	max-width: 100px;
 	color: #5b5a5f;
 }
+.choose-menu select {
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    width: 100px;
+    color: #5b5a5f;
+}
 .choose-menu h3 {
 	color: #fff;
 	display: block;
@@ -746,10 +755,48 @@ footer li a {
 footer i {
 	color: #fff;
 }
+#modal-zakaz .modal-dialog h4 {
+	display: inline-block;
+	margin: 2px auto;
+	font-size: 16px;
+    width: 40%;
+    color: #fff;
+}
+#modal-zakaz .modal-dialog input {
+	font-size: 16px;
+	display: inline-block;
+	margin: 2px auto;
+	width: 100%;
+}
+#modal-zakaz .modal-dialog .modal-content {
+	width: 320px;
+	height: 320px;
+}
+.form-zakaz {
+	max-width: 240px;
+	display: block;
+	margin: 0 auto;
+}
+#modal-zakaz .num-food-for input, #modal-zakaz .num-cal-form input {
+	width: 58%;
+}
+#modal-zakaz h2.modal-title {
+    margin: 15px 0 0 0;
+}
+#modal-zakaz .modal-body button {
+	font-size: 18px;
+}
+
+
+
 
 .modal .modal-dialog {
 	width: 300px;
-	margin-top: 80px;
+    margin-top: -150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
 }
 .modal .modal-content {
 	border-radius: 50%;
@@ -1288,7 +1335,7 @@ h2.modal-title {
 	    position: absolute;
 	    right: 50%;
 	    top: 1px;
-	    margin-right: -90px;
+	    margin-right: -70px;
 	}
 	.aside-right {
 	    width: 28%;
@@ -1297,6 +1344,9 @@ h2.modal-title {
 	}
 	#why {
 		display: none;
+	}
+	#mainNav .navbar-header {
+		background-color: #e9f5f7;
 	}
 
 }
