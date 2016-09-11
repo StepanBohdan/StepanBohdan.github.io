@@ -407,6 +407,27 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     float: 
 }
 
+
+#accordion .panel-default > .panel-heading {
+    color: #fff;
+    background-color: #59cec8;
+    border-color: #59cec8;
+    border-radius: 20px;
+}
+#accordion .panel-default {
+	background: transparent;
+	border: none;
+}
+
+.panel-title a {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
 #why > .container {
 	max-width: 1200px
 }
