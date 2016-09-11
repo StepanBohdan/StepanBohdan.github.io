@@ -84,7 +84,7 @@
 						<img src="img/about1.jpg" alt="image">
 						<span class="brokol-i"></span>
 					</div>
-					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12"">
+					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
 						<h5>Кто мы такие?</h5>
 						<hr>
 						<p>Дорогие друзья, приветствуем Вас на странице заказа полезного питания. Нас зовут Александр и Дарья. <br>
@@ -199,7 +199,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
 					<div class="center-block">
-						<p><span>500 </span>рублей brстоимость среднего <br>рациона в день</p>
+						<p><span>500 </span>рублей стоимость среднего <br>рациона в день</p>
 					</div>
 				</div>
 			</div>
@@ -223,7 +223,11 @@
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" data-pack-type='start' type="text">
+								<select class="input-num-food" data-pack-type='start' required="required" size="1">
+									<option selected value="0">0</option>
+									<option value="3">3</option>
+								</select>
+								
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -242,7 +246,11 @@
 									<h4 class="callorie">Ккал</h4>
 								</div>
 								<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-									<input class="input-num-food" data-pack-type='standart' type="text" >
+									<select class="input-num-food" data-pack-type='standart' required="required" size="1">
+										<option selected value="0">0</option>
+										<option  value="3">3</option>
+										<option value="5">5</option>
+									</select>
 									<h4 class="num-food">Приемы <br>пищи</h4>
 								</div>
 							</div>
@@ -261,7 +269,11 @@
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-num-food" data-pack-type='sport' type="text">
+								<select class="input-num-food" data-pack-type='sport' required="required" size="1">
+									<option selected value="0">0</option>
+									<option value="3">3</option>
+									<option value="5">5</option>
+								</select>
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 						</div>
@@ -278,7 +290,11 @@
 								<h4 class="callorie">Ккал</h4>
 							</div>
 							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-	 						<input class="input-num-food" data-pack-type='premium' type="text">
+	 						<select class="input-num-food" data-pack-type='premium' required="required" size="1">
+	 								<option selected value="0">0</option>
+									<option value="3">3</option>
+									<option value="5">5</option>
+								</select>
 								<h4 class="num-food">Приемы <br>пищи</h4>
 							</div>
 							<h3>+ Личный диетолог и повар</h3>
@@ -293,10 +309,11 @@
 					<div class="result">
 						<h2>Итого ваш рацион в день: <span> 600 руб.</span></h2>
 						<div class="center-booking">
-							<input class="num-day" type="text" required="required" value="1 день">
+							<input class="num-day" data-pack-type='' type="text" required="required" value="1 день">
 						</div>
 						<div class="center-booking">
-							<button class="btn-booking" onClick="calc()">Оформить заказ</button>
+							<button class="btn-booking" onClick="calc()"
+							data-toggle="modal" data-target="#modal-zakaz">Оформить заказ</button>
 						</div>
 						
 					</div>
@@ -625,6 +642,32 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 		  </div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="modal-zakaz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      <h2 class="modal-title" id="myModalLabel">Заполните <br>форму</h2>
+		    </div>
+		    <div class="modal-body">
+		    <form class="form-zakaz" id="form" action="send.php" method="POST">
+		    	<input type="text" value="Ваше имя" required="required">
+		    	<input type="tel" value="Ваш телефон" required="required">
+		    	<input type="email" value="Вашa почта" required="required">
+		    	<div class="num-food-for">
+		    		<h4>Приемы пищи</h4> <input type="text" required="required">
+		    	</div>
+		    	<div class="num-cal-form">
+		    		<h4>Ккал</h4>		 <input type="text" required="required">
+		    	</div>
+		    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
+		    </form>
+		    </div>
+		  </div>
+		</div>
+	</div>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="js/masonry.pkgd.min.js"></script>
 	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
@@ -653,7 +696,11 @@ P.S.  Теперь я знаю «что такое съесть, что бы н�
 			$('.result h2 span').text(total+'руб');
 		}
 
-
+// $('.input-callorie[data-pack-type="'+key+'"]').val(data[key].kkal*food_count);
+// 				total_calorie += data[key].kkal;
+// $('.num-cal-form h4 input-callorie').text(total_calorie+'ккал');
+// $('.num-day[data-pack-type="'+key+'"]').val();
+// total += data[key].price*food_count*numbers_day;
 
 		$('.grid').masonry({
 		  itemSelector: '.grid-item',
