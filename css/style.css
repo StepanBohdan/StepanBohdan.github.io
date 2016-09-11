@@ -284,7 +284,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	position: relative;
 }
 .border-colname {
-	border: 7px solid rgb(116, 185, 219);
+	border: 7px solid #419ece;
 	border-radius: 30px;
 	padding: 0px 4px 4px;
 }
@@ -317,7 +317,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	margin-top: 10px;
 }
 .good-price {
-	color: rgb(116, 185, 219);
+	color: #419ece;
 	font-size: 26px;
 }
 .choose-menu {
@@ -407,23 +407,33 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     float: 
 }
 
-
+#accordion {
+	padding: 20px;
+	background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+	border-radius: 15px;
+}
 #accordion .panel-default > .panel-heading {
     color: #fff;
     background-color: #59cec8;
     border-color: #59cec8;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 #accordion .panel-default {
 	background: transparent;
 	border: none;
+	box-shadow: none;
 }
-
+#accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border-top: none;
+}
 .panel-title a {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 22px;
     color: #fff;
+}
+.dinner-time {
+	color: #62c5cf;
 }
 
 
