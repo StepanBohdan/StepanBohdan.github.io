@@ -450,6 +450,12 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     font-size: 26px;
     color: #fff;
 }
+.panel-body h2 {
+	font-size: 32px;
+}
+.panel-body h3 {
+	margin: 5px 0;
+}
 .dinner-time {
 	color: #62c5cf;
 }
@@ -645,6 +651,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     display: block;
     margin: auto;
 }
+
 .name-slider {
 	width: 300px;
     display: block;
@@ -691,8 +698,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	margin: 0 auto;
     text-shadow: none;
     line-height: 1.5;
-    font-family: "Lobster",cursive;
-    font-size: 16px;
+/*    font-family: "Lobster",cursive;
+    font-size: 16px;*/
 }
 .slider-item i {
 	color: #fff;
@@ -718,7 +725,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 
 footer#contacts {
-	padding: 20px 0 100px;
+	padding: 20px 0 40px;
 }
 .question-col {
 	height: 168px;
@@ -1145,6 +1152,9 @@ h2.modal-title {
     	right: -95px;
     	top: 46px;
     }
+    	#comment .carousel-control {
+    	width: 30%;
+}
 }
 
 
