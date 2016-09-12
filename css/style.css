@@ -139,7 +139,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	background-repeat: repeat-x;
 }
 .wave-numbers2 {
-    background: url(../img/wave2.png) 0 0px;
+    background: url(../img/sprite-wave1.png) 0 0px;
     position: absolute;
     left: 0px;
     bottom: 0px;
