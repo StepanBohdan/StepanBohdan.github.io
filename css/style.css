@@ -151,7 +151,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	background: url(../img/sprite-wave1.png) 0 -29px;
 	position: absolute;
 	left: 0px;
-	bottom: -9px;
+	bottom: -8px;
 	width: 100%;
 	height: 10px;
 	background-repeat: repeat-x;
@@ -279,7 +279,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     height: 200px;
 }
 #zakaz {
-	background-color: #e8f5ed;
+	background-color: #eaf7f9;
 	color: #5b5a5f;
 	position: relative;
 }
@@ -323,6 +323,11 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 .choose-menu {
 	padding: 15px;
 }
+.choose-menu p {
+	font-family: 'Lobster', cursive;
+	font-size: 15px;
+	color: #fff;
+}
 .choose-menu input {
 	border: none;
 	border-radius: 15px;
@@ -331,6 +336,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	font-family: 'Lobster', cursive;
 	max-width: 100px;
 	color: #5b5a5f;
+	margin: 15px 0 0;
 }
 .choose-menu select {
     border: none;
@@ -340,6 +346,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'Lobster', cursive;
     width: 100px;
     color: #5b5a5f;
+    margin: 15px 0 0;
+    background: #fff;
 }
 .choose-menu h3 {
 	color: #fff;
@@ -380,7 +388,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	text-shadow: none;
 }
 .center-booking {
-	display: inline-block;
+    display: inline-block;
+    margin: 0 0 10px 20px;
 }
 .num-day {
     border: none;
@@ -429,7 +438,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 .panel-title a {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 22px;
+    font-size: 26px;
     color: #fff;
 }
 .dinner-time {
@@ -617,7 +626,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 
 
 #comment .carousel {
-	background: #e8f5ed;
+	background: #eaf7f9;
 	height: 825px;
 }
 #comment .carousel-inner img {
@@ -640,6 +649,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	background: #8fddda;
 	border-radius: 5px;
 	padding: 1px 3px;
+	margin: 0 7px;
 }
 .slide-left {
 	background: url(../img/sprite.png) -71px -2656px;
@@ -672,6 +682,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	margin: 0 auto;
     text-shadow: none;
     line-height: 1.5;
+    font-family: "Lobster",cursive;
+    font-size: 16px;
 }
 .slider-item i {
 	color: #fff;
@@ -795,9 +807,9 @@ footer i {
 }
 #modal-zakaz .modal-dialog input {
 	font-size: 16px;
-	display: inline-block;
+	display: block;
 	margin: 2px auto;
-	width: 100%;
+	width: 240px;
 }
 #modal-zakaz .modal-dialog .modal-content {
 	width: 320px;
@@ -808,8 +820,16 @@ footer i {
 	display: block;
 	margin: 0 auto;
 }
+.num-food-for input {
+	display: inline-block;
+}
+.num-food-for, .num-cal-form {
+	width: 240px;
+	margin: 0 auto;
+}
 #modal-zakaz .num-food-for input, #modal-zakaz .num-cal-form input {
 	width: 58%;
+	display: inline-block;
 }
 #modal-zakaz h2.modal-title {
     margin: 15px 0 0 0;
@@ -820,14 +840,16 @@ footer i {
 
 
 
-
+#modal-consult {
+	z-index: 111111;
+}
 .modal .modal-dialog {
-	width: 300px;
-    margin-top: -150px;
+	width: 320px;
+    margin-top: -160px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -150px;
+    margin-left: -160px;
 }
 .modal .modal-content {
 	border-radius: 50%;
@@ -910,9 +932,18 @@ h2.modal-title {
 	position: absolute;
 }
 
+.col-block-icon p {
+		text-align: center;
+		font-family: 'Lobster', cursive;
+		font-size: 16px;
+		color: #5b5a5f;
+	}
 
-
-
+.aside-left p {
+	font-family: 'Lobster', cursive;
+	font-size: 14px;
+	color: #5b5a5f;
+}
 
 
 
@@ -1206,17 +1237,23 @@ h2.modal-title {
 	    color: #5b5a5f;
 	    padding: 0px 0px;
 	    margin: 5px auto;
+	    width: 300px;
+		display: block;
 	}
 	.day-ration input.phone {
 	    background: #fff;
 	    color: #5b5a5f;
 	    padding: 0px 0px;
 	    margin: 5px auto;
+	    width: 300px;
+		display: block;
 	}
 	.day-ration input.btn-try {
 	    background: #5b5a5f;
 	    color: #fff;
 	    padding: 0px 25px;
+	    display: block;
+		margin: auto;
 	}
 	.aside-left {
     	width: 68%;
@@ -1319,9 +1356,19 @@ h2.modal-title {
 	}
 	.col-block-icon p {
 		text-align: center;
+		font-family: 'Lobster', cursive;
+		font-size: 16px;
+		color: #5b5a5f;
 	}
 	.arrow-left, .arrow-right, .arrow-down, .row-arrow-down {
 		display: none;
+	}
+	.aside-left h5 {
+	    color: #62c5cf;
+	    font-family: 'Lobster', cursive;
+	    text-align: center;
+	    line-height: 1.8;
+	    font-size: 16px;
 	}
 }
 @media (max-width: 1120px) {
@@ -1330,7 +1377,7 @@ h2.modal-title {
 		top: 567px !important;
 	}
 	.input-callorie, .input-num-food {
-		margin: 15px 0px;
+		margin: 15px 0 0;
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1356,6 +1403,9 @@ h2.modal-title {
 	.day-ration h1 {
   		margin: 0 10px 0 10px;
    		font-size: 34px;
+	}
+	#why {
+		display: none;
 	}
 }
 @media (max-width: 767px) {
