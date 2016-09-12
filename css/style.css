@@ -348,6 +348,13 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
     color: #5b5a5f;
     margin: 15px 0 0;
     background: #fff;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
 }
 .choose-menu h3 {
 	color: #fff;
@@ -382,6 +389,8 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 	display: inline-block;
 	padding: 20px 25px 32px;
 	text-shadow: #fff 2px 0 0px, #fff 0 2px 0px, #fff -2px 0 0px, #fff 0 -2px 0px;
+	font-size: 28px;
+	margin-top: 24px;
 }
 .result span {
 	color: #fff;
