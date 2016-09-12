@@ -35,6 +35,7 @@ select option {
 	outline: none;
 	background: transparent;
 	border: none;
+	text-align: center;
 }
 .h2 {
 	display: inline-block;
