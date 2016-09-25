@@ -1,1749 +1,640 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie-8 lang="ru"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie-9 lang="ru"><![endif]-->
+<!--[if gt IE 9]><!--><html lang="ru"><!--<![endif]-->
+<head lang="en">
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Vitae</title>
-	<!-- !!! -->
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta name="robots" content="all">
+	<title>Окна во Владимире</title>
+	<meta name="description" content="Светопрозрачные конструкции">
+	<meta name="keywords" content="Окна во Владимире,Светопрозрачные конструкции">
+	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!---->
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&sensor=false&key=AIzaSyDcmOwlMpHCyHSOca66rCjXMHNaeha4qIk"></script>
+	<script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel='stylesheet' type='text/css' href='highslide.min.css'/>
+<!--[if IE 6]>
+<link rel='stylesheet' type='text/css' href='/shared/highslide-4.1.13/highslide-ie6.css'/>
+<![endif]-->
+<!--[if lte IE 7 ]>
+<link rel='stylesheet' type='text/css' href='/shared/highslide-4.1.13/style1_ie.css'/>
+<![endif]-->
+<script type='text/javascript' src='highslide-full.packed.js'></script>
+<script type='text/javascript'>
+hs.graphicsDir = './shared/highslide-4.1.13/graphics/';
+hs.outlineType = null;
+hs.showCredits = false;
+hs.lang={cssDirection:'ltr',loadingText:'Загрузка...',loadingTitle:'Кликните чтобы отменить',focusTitle:'Нажмите чтобы перенести вперёд',fullExpandTitle:'Увеличить',fullExpandText:'Полноэкранный',previousText:'Предыдущий',previousTitle:'Назад (стрелка влево)',nextText:'Далее',nextTitle:'Далее (стрелка вправо)',moveTitle:'Передвинуть',moveText:'Передвинуть',closeText:'Закрыть',closeTitle:'Закрыть (Esc)',resizeTitle:'Восстановить размер',playText:'Слайд-шоу',playTitle:'Слайд-шоу (пробел)',pauseText:'Пауза',pauseTitle:'Приостановить слайд-шоу (пробел)',number:'Изображение %1/%2',restoreTitle:'Нажмите чтобы посмотреть картинку, используйте мышь для перетаскивания. Используйте клавиши вперёд и назад'};</script>
+<script type='text/javascript' src='flowplayer-3.2.9.min.js'></script>
+<!-- 46b9544ffa2e5e73c3c971fe2ede35a5 -->
+<link rel='stylesheet' type='text/css' href='calendar.css' />
+<script type='text/javascript' src='ru.js'></script>
+<script type='text/javascript' src='cookie.js'></script>
+<script type='text/javascript' src='widgets.js@v=7'></script>
+<script type='text/javascript' src='calendar.packed.js'></script>
+<script type='text/javascript' src='feedback.factory.min.js'></script>
+<script type='text/javascript'>
+	FeedbackFactory.setOption('sources', '/shared/feedback');
+	FeedbackFactory.setOption('url', '/my/s3/feedback/report.php');
+	FeedbackFactory.setData('instance_id', 1650618);
+	FeedbackFactory.addScript('https://cabinet.megagroup.ru/client.jsonp?callback=FeedbackFactory.setUser');
+	FeedbackFactory.setUser = function (data) { if(data.id) FeedbackFactory.setData('user_id', data.id);};
+</script>
+<script type='text/javascript'>/*<![CDATA[*/
+widgets.addOnloadEvent(function() {
+	if (typeof jQuery == 'undefined') {
+		var s = document.createElement('script');
+		s.type = 'text/javascript';
+		s.src = '/shared/s3/js/jquery-1.7.2.min.js';
+		document.body.appendChild(s);
+	}
+});
+/*]]>*/
+</script>
+<!--s3_require-->
+<link rel="stylesheet" href="jquery.ui.datepicker.css" type="text/css"/>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="lp.core.js"></script>
+<!--/s3_require-->
+
+	
+	<!-- LP requires -->
+	<link rel="stylesheet" href="jquery.popover.css" type="text/css"/>
+	<link rel="stylesheet" href="lightgallery.min.css" type="text/css"/>
+	<link rel="stylesheet" href="lp.css" type="text/css"/>
+	<script type="text/javascript" src="timer.js"></script>
+	<script type="text/javascript" src="jquery.popover.min.js"></script>
+	<script type="text/javascript" src="jquery.equalheightresponsive.min.js"></script>
+	<script type="text/javascript" src="one.line.menu.js"></script>
+	<script type="text/javascript" src="lightgallery.min.js"></script>
+	<script type="text/javascript" src="lg-zoom.min.js"></script>
+	<script type="text/javascript" src="owl.carousel.min.js"></script>
+	<script type="text/javascript" src="resizeController.js"></script>
+	<script type="text/javascript" src="lp.js"></script>
+							<!-- LP requires -->
+
+      <link rel="stylesheet" href="patch.css@ver=1474620001.css" type="text/css" id="s3-panel-link" />
+
+	
+	<script type="text/javascript">
+		$(function() {
+			s3LP.init({"is_cms":false});
+		});
+	</script>
 </head>
 <body>
-	<nav id="mainNav" class="nav-menu navbar navbar-default navbar-fixed-top">
-		<div class="wave3-sprite"></div>
-		<span class="img-header-left"></span>
-		<span class="img-header-right"></span>
-		<div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top"></a>
-        </div>
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="page-scroll" href="#about">О нас</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work">Работаем</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#zakaz">Заказ</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#why">Зачем ПП</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#comment">Отзывы</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contacts">Контакты</a>
-                    </li>
-                </ul><div class="call">
-        	<h3>(4492) 33-00-00</h3>
-        	<button type="button" class="consult" data-toggle="modal" data-target="#modal-consult">Заказать консультацию</button>
-        </div>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        
-        
-        <!-- /.container-fluid -->
-    </nav>
-    <h1 class="header-h1">Полезный рацион на каждый день <br> с доставкой на дом</h1>
-	<section class="ration">
-		<div class="container">
-			<div class="day-ration center-block">
-				<h2>Попробуйте суточный рацион <br>со скидкой 30%!</h2>
-				<h1>560руб.</h1> <span>800руб.</span>
-				<form id="form" action="send.php" method="POST">
-					<input class="name" type="text" value="Имя" name="name" required="required">
-					<input class="phone" type="text" value="Телефон" name="phone" required="required">
-					<input class="btn-try" type="submit" value="Хочу попробовать!">
-				</form>
-			</div>
+	<div class="top_block_wrapper inverse"  id="_lp_block_10001441" data-block-layout="3841">
+	<div class="site-header">
+		<div class="site-header__topLine">
+			<div class="site-header__extraWrap">
+				<div class="site-header__leftPart">
+					<div class="site-header__companyLogo">
+						<a href="index.html"><img src="okna_doma_belyy1.png" alt="logo" /></a>
+					</div>
+					<div class="site-header__companyInformation">						
+						<div class="siteName"><a href="index.html">Мы – ОКНАДОМА</a></div>													<div class="descriptor">Остекление алюминием и пвх</div>
+											</div>
+									</div>
+				<div class="site-header__contactsPart">
+										<div class="contacts">
+						<div class="contactsExtraWrap">
+														<div>
+								<a href="tel:89101771279">89101771279</a>
+							</div>
+														<div>
+								<a href="tel:604737">604737</a>
+							</div>
+														
+						</div>
+						<div class="contacstTitle">Звоните с 9:00 до 17:00</div>					</div>
+										<a class="callForm" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500241&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">Вам перезвонить?</a>				</div>			
+				<div class="burger_button "><span></span><span></span><span></span></div>			</div>
 		</div>
-	</section>
-	<div class="clearfix"></div>
-	<section id="about">
-		<div class="container">
-			<h1>О нас</h1>
-			<aside class="aside-left">
-				<div class="row">
-					<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
-						<img src="img/about1.jpg" alt="image">
-						<span class="brokol-i"></span>
-					</div>
-					<div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
-						<h5>Кто мы такие?</h5>
-						<hr>
-						<p>Дорогие друзья, приветствуем Вас на странице заказа полезного питания. Нас зовут Александр и Дарья. <br>
-						С нашей помощью вы решите задачу: Как питаться полезно, вкусно и недорого, без кафе, диетологов и очередей в магазине. </p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="why-trust col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<img src="img/about3.jpg" alt="image">
-						<span class="grapes-i"></span>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-						<h5>Почему стоит доверить нам свой <br>рацион? </h5>
-						<hr>
-						<p>Дарья Сидорова - сертифицированный диетолог, мастер полезной выпечки и инструктор тренажерного зала. <br>
-						Александр Сидоров - старший инструктор тренажерного зала с опытом работы более 5 лет, организатор и управляющий проекта. <br>
-						Мы знаем все о режиме и рационе, т.к. питание, - 70% успеха на пути по оздоровлению Вашего тела.</p>
-					</div>
-				</div>
-			</aside>
-			<aside class="aside-right">
-				<span class="sasha">Саша</span>
-				<span class="dasha">Даша</span>
-				<img src="img/about2.png" alt="">
-			</aside>
-			
-		</div>
-	</section>
-	<section id="work">
-		<div class="container">
-			<h1>Как мы работаем</h1>
-			<div class="row work-row">
-				<div class="col-lg-1"></div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon1"></span>
-					</div>
-					<p>Делаете заказ <br>любым способом</p>
-				</div>
-				<div class="arrow-right col-lg-2"></div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon2"></span>
-					</div>
-					<p>Общаетесь с менеджером</p>
-				</div>
-				<div class="arrow-right col-lg-2"></div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon3"></span>
-					</div>
-					<p>Внесите оплату</p>
-				</div>
-				<div class="col-lg-1"></div>
-			
-				<div class="col-lg-11"></div>
-				<div class="arrow-down col-lg-1"></div>
-			
-
-
-				<div class="col-lg-1"></div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon6"></span>
-					</div>
-					<p>Вы счастливы!</p>
-				</div>
-				<div class="arrow-left col-lg-2"></div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon5"></span>
-					</div>
-					<p>Курьер привозит заказ <br>в удобное время и место</p>
-				</div>
-				<div class="arrow-left col-lg-2">
-					
-				</div>
-				<div class="col-block-icon col-lg-2 col-md-4 col-sm-6">
-					<div class="block-icon">
-						<span class="icon4"></span>
-					</div>
-					<p>Мы готовим заказ</p>
-				</div>
-				<div class="col-lg-1"></div>
+		<div class="site-header__bottomLine">
+						<div class="site-header__companyLogo">
+				<a href="index.html"><img src="okna_doma_belyy.png" alt="" /></a>
 			</div>
-		</div>
-	</section>
-	<section id="numbers">
-		<div class="wave-numbers"></div>
-		<div class="wave-numbers2"></div>
-		<div class="wave2"></div>
-		<div class="container">
-			<h1>Цифры о мастерской</h1>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-					<div class="center-block">
-						<p>болле <span> 50 </span> <br>постоянных <br>клиентов</p>
-					</div>
-					
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-					<div class="center-block">
-						<p>уже <span> 1435 </span>проготовленных <br>контейнеров еды</p>
-					</div>
-					
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-					<div class="center-block">
-						<p><span>4 </span>часов в день <br>наши клиенти <br>в среднем экономят <br>времени</p>
-					</div>
-					
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-					<div class="center-block">
-						<p><span>500 </span>рублей стоимость среднего <br>рациона в день</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="zakaz">
-		<div class="wave3-sprite"></div>
-		<span class="ration-grapes"></span>
-		<div class="container">
-			<h1>Подбор рациона</h1>
-
-			<div class="left-block-vert-cont">
-                                        <form name="cl_form" action="" method="post">
-
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="col-name_menu cnm-margin80">
-						<h2>Яркий Старт</h2>
-						<div class="choose-menu">
-							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
-						<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								
-								<input class="input-callorie" value="0" name="sunn" readonly="readonly" maxlength="10" size="5" type="text">
-
-								<h4 class="callorie">Ккал</h4>
+									<div class="site-header__companyInformation">						
+				<div class="siteName"><a href="index.html">Мы – ОКНАДОМА</a></div>									<div class="descriptor">Остекление алюминием и пвх</div>
 							</div>
-							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								
-
-								<select id="type2" class="Validate_Required " name="type2" aria-required="true" onChange="calc(this.value); Selected_two(this)">
-                                    <option class="one" selected="selected" value="0">0</option>
-                                    <option class="two" value="2640">3</option>
-                                </select>
-								
-								<h4 class="num-food">Приемы <br>пищи</h4>
-							</div>
-						</div>
 					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<h4 class="text-center good-price">Выгодное <br>предложение</h4>
-					<div class="border-colname">
-						<div class="col-name_menu">
-							<h2>Стандарт</h2>
-							<div class="choose-menu">
-								<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
-							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-									<input class="input-callorie" value="0" name="supp" readonly="readonly" maxlength="10" size="5" type="text">
-									<h4 class="callorie">Ккал</h4>
-								</div>
-								<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-									<!-- <select name="type3" id="type3" onchange="calc(this.value);"> -->
-									<select id="type3" class="Validate_Required " name="type3" aria-required="true" onChange="calc(this.value); Selected_one(this)">
-	                                    <option class="one" selected="selected" value="0">0</option>
-	                                    <option class="three" value="2289">3</option>
-	                                    <option class="four" value="3815">5</option>
-	                                </select>
-									<h4 class="num-food">Приемы <br>пищи</h4>
-								</div>
-							</div>
-						</div>
-						<span class="blueberry"></span>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="col-name_menu cnm-margin80">
-						<h2>Спорт</h2>
-						<div class="choose-menu">
-							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
-							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" value="0" name="suww" readonly="readonly" maxlength="10" size="5" type="text">
-								<h4 class="callorie">Ккал</h4>
-							</div>
-							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<select id="type7" class="Validate_Required " name="type7" aria-required="true" onChange="calc(this.value); Selected_three(this)">
-	                                <option class="one" selected="selected" value="0">0</option>
-	                                <option class="five" value="3579">3</option>
-	                                <option class="six" value="5965">5</option>
-	                            </select>
-								<h4 class="num-food">Приемы <br>пищи</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
-					<div class="col-name_menu cnm-margin80">
-						<h2>Премиум</h2>
-						<div class="choose-menu">
-							<p>Здоровое питание — это питание, обеспечивающее рост, нормальное развитие и жизнедеятельность человека, способствующее укреплению его здоровья и профилактике заболеваний. Наука проводит многочисленные исследования по улучшению системы питания</p>
-							<div class="col-callorie col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<input class="input-callorie" value="0" name="suzz" readonly="readonly" maxlength="10" size="5" type="text">
-								<h4 class="callorie">Ккал</h4>
-							</div>
-							<div class="col-num-food col-lg-6 col-md-6 col-sm-6 col-xs-6">
-								<select id="type5" class="Validate_Required " name="type5" aria-required="true" onChange="calc(this.value); Selected_four(this)">
-	                                <option class="one" selected="selected" value="0">0</option>
-	                                <option class="seven" value="3810">3</option>
-	                                <option class="eight" value="6350">5</option>
-	                            </select>
-								<h4 class="num-food">Приемы <br>пищи</h4>
-							</div>
-							<h3>+ Личный диетолог и повар</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-lg-12">
-				<span class="ration-grapes2"></span>
-					<div class="result">
-						<div id="block-show-seven">
-						<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" type="text"> руб.</span></h2>
-						</div>
-
-						<div id='Block1' style='display: none;'>
-					      	<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_seven" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-					    </div>
-
-						<div id='Block2' style='display: none;'>
-					      	<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_one" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-					    </div>
-
-					    <div id='Block3' style='display: none;'>
-					        <h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_two" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-					    </div>
-
-						<div id='Block4' style='display: none;'>
-						<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_three" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-						</div>
-
-						<div id='Block5' style='display: none;'>
-						<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_four" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-						</div>
-
-						<div id='Block6' style='display: none;'>
-						<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_five" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-						</div>
-
-						<div id='Block7' style='display: none;'>
-						<h2>Итого ваш рацион в день: <span> <input class="prices" value="0" name="prices_six" readonly="readonly" maxlength="10" size="5" type="text"> руб.</span></h2><br>
-						</div>
-						
-						<div class="h2">
-						<h2>Количество дней: <span> <input class="prices-one" value="1" type="text" name="email" id="amount" onchange="calc(this.value);"></span></h2>
-						</div>
+	</div>
+		<div class="menu_wrapper_wr ">
+		<div class="menu_wrapper ">
+			<nav class="menuDesktop">
+				<div class="menu_close"></div>
+				<ul class="menuDesktop__menuTop">
 
 
-						<div class="center-booking">
-							<button class="btn-booking" onClick="calc()"
-							data-toggle="modal" data-target="#modal-zakaz">Оформить заказ</button>
-						</div>
-						
-					</div>
-					
-				</div>
-			</div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="modal-zakaz" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		      <h2 class="modal-title" id="myModalLabel">Заполните <br>форму</h2>
-		    </div>
-		    <div class="modal-body">
-			    <form class="form-zakaz" id="form" action="send.php" method="POST">
-			    	<input type="text" value="Ваше имя" required="required">
-			    	<input type="tel" value="Ваш телефон" required="required">
-			    	<input type="email" value="Вашa почта" required="required">
-			    	<div class="num-food-for">
-			    		<h4>Приемы пищи</h4> <input value="0" name="sull" readonly="readonly" maxlength="10" size="5" type="text">
-			    	</div>
-			    	<div class="num-cal-form">
-			    		<h4>Ккал</h4>		 
-			    		<input value="0" name="summ" readonly="readonly" maxlength="10" size="5" type="text">
-			    	</div>
-			    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
-			    </form>
-		    </div>
-		  </div>
+			</nav>
 		</div>
 	</div>
-
-
-                                        </form>
-                                    </div>
-
-
-			<h1>Меню на день</h1>
-
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="headingOne">
-				    <h3 class="panel-title">
-				      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				        Яркий старт 3 
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Перекус:</h2>
-							</div>
-						</div>
-					
-						<h2>Творожная запеканка из фермерского творога с изюмом и сметаной</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>259 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>18 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Куриная котлетка, Спагетти с зеленью</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>282 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>23,8 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>41,4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<h2>Салат: томаты с зеленью в йогуртовой заправке  </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>50 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>1,3 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,2 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<h2>Суп: Минестроне </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>60 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>1,7 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>2,2 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6,8 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Ужин:</h2>
-							</div>
-						</div>
-						<h2>Филе трески в сливочном соусе, Овощное рагу </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>230 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>20,8 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>7,9 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>15,6 Углеводов</h3>
-								</div>
-							</div>
-						</div>
+	</div>
+	<div class="top_bl_wrapper inverse" id="_lp_block_10001641" data-block-layout="4041">
+	<div class="topBlock" style="background:url(fgs16_slider1_pic3.jpg) 50% 0 /cover no-repeat">
+		<div class="topBlock__extraWrap">
+			<div class="countdown_wr clear-self">
+								<div class="topBlock__countdownBlock">
+					<div class="title_wrap clear-self">
+						<div class="title">АКЦИЯ!</div>
+						<div class="note">Двухкамерный стеклопакет по цене однокамерного! Выгода <b>700 рублей </b>за 1 окно!</div>
 					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
+					<div class="timeBlock">
+						<div class="countTitle">До окончания осталось</div>
+						<div class="time">01.01.2018 00:00</div>
+					</div>
 				</div>
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="headingTwo">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				        Стандарт 3
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-				    <div class="panel-body">
-				      <div class="row menu-row">
+				<div class="topBlock__formInBlock">
+					<div class="form_wr1">
+						<div class="title">ОСТАВЬТЕ ЗАЯВКУ НА БЕСПЛАТНЫЙ ЗАМЕР</div>						<div class="noteForm">прямо сейчас!</div>						<div class="tpl-anketa" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500441&param[tpl]=global:anketa.block.tpl&param[custom_params]=custom=1||placeholdered_fields=1||hide_title=1||button=1||div_class=form_inner||after_button_class=noteFormBottom" data-api-type="form"><form  method="post" action="index.html"><input type="hidden" name="form_id" value="29500441"><input type="hidden" name="tpl" value="global:anketa.block.tpl"><div class="form_inner"><div class="tpl-field  type-text field-required"><div class="field-value input-name"><input  type="text" size="30" maxlength="100" value="" name="name" placeholder="Имя *" /></div></div><div class="tpl-field  type-text field-required"><div class="field-value input-phone"><input  type="text" size="30" maxlength="100" value="" name="phone" placeholder="Телефон *" /></div></div><input type="hidden" name="after_button" value=""><div class="tpl-field  tpl-field-button"><button >Отправить заявку</button></div><div class="form-text-after-button noteFormBottom"><div>Мы свяжемся с Вами в течение 30 мин</div></div></div></form>
+			<script>
+				$('input[data-datepicker="calendar"]').datepicker({
+					dateFormat: "dd.mm.yy"
+				});
 				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак :</h2>
-							</div>
-						</div>
+				$('input[data-datepicker="calendar-from"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
 					
-						<h2>Творожная запеканка из фермерского творога с изюмом и сметаной</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>259 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>18 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Куриная котлетка, Шпинатные фетучини</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>282 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>23,8 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>41,4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<h2>Итальянский салат: томаты черри,  сыр моцарелла , руккола, кедровые орешки, салатный микс </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>200 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>12 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-to"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "minDate", selectedDate );
 						
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Ужин:</h2>
-							</div>
-						</div>
-						<h2>Филе дорадо в имбирном маринаде, Соте из печеных овощей </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>200 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>20 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-				    </div>
-				    <!-- row-menu -->
-				    </div>
-				  </div>
-				</div>
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="headingThree">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				        Стандарт 5
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак:</h2>
-							</div>
-						</div>
-					
-						<h2>Творожная запеканка из фермерского творога с изюмом и сметаной</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>259 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>18 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Первый перекус:</h2>
-							</div>
-						</div>
-					
-						<h2>Шоколадные маффины с протеином </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>156 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>15 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>3 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>10 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-						<h2>Куриная котлетка, Шпинатные фетучини </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>282 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>23,8 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,5 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>41,4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<h2>Салат: томаты с зеленью в йогуртовой заправке</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>25082 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>1,3 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>3 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4,2 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Второй обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Итальянский салат: nоматы черри,  сыр моцарелла , руккола, кедровые орешки, салатный микс</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>151 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>12 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Ужин:</h2>
-							</div>
-						</div>
-					
-						<h2>Филе дорадо в имбирном маринаде Соте из печеных овощей </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>200 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>20 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16 Углеводов</h3>
-								</div>
-							</div>
-						</div>
+						if (otherInput.val() !="") {
+							valueInput.val(selectedDate + ' -- ' + otherInput.val());
+						}
+						
+					}
+				});
+				$('input[data-datepicker="calendar-to"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-from"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "maxDate", selectedDate );
+						
+						if (otherInput.val() !="") {
+							valueInput.val(otherInput.val() + ' -- ' + selectedDate);
+						}
+						
+					}
+				});
+			</script>
+		</div>		
 					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
 				</div>
-				
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="heading4">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-				        Спорт 3
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак:</h2>
 							</div>
-						</div>
-					
-						<h2>Блины с сыром и зеленью </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>300 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16,7 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>10 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>30 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Ростбиф из говядины с соусом «песто», Спагетти со шпинатом и помидорами черри </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>500 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>27 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>20 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>45 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Второй обед:</h2>
-							</div>
-						</div>
-						<h2>Индейка томлена в сливочно-грибном соусе, Гречневая крупа, Микс печеных овощей</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>393 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>42 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>45 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
-				</div>
-
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="heading5">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-				        Спорт 5
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак:</h2>
-							</div>
-						</div>
-					
-						<h2>Блины с сыром и зеленью </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>300 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>16,7 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>10 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>30 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Перекус:</h2>
-							</div>
-						</div>
-						<h2>Оладьи с ягодным джемом</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>150 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8,7 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>7,9 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>10 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<h2>Ростбиф из говядины с соусом «песто», Спагетти со шпинатом и помидорами черри </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>500 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>27 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>20 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>45 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Второй обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Индейка томлена в сливочно-грибном соусе, Гречневая крупа, Микс печеных овощей</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>393 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>42 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>45 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Ужин:</h2>
-							</div>
-						</div>
-					
-						<h2>Салат «Цезарь»</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>200 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>22 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>11 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>4 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
-				</div>
-				
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="heading6">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-				        Премиум 3
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак:</h2>
-							</div>
-						</div>
-					
-						<h2>Сырники со сметаной</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>358 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>41 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>11 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>22 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-					
-						<h2>Куриная котлетка, Спагетти с зеленью</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>463 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>35 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>13 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>52 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Второй обед:</h2>
-							</div>
-						</div>
-						<h2>Индейка терияки, Спагетти с вялеными томатами</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>450 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>46 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>54 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
-				</div>
-				
-				<div class="panel panel-default">
-				  <div class="panel-heading" role="tab" id="heading7">
-				    <h3 class="panel-title">
-				      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
-				        Премиум 5
-				      </a>
-				    </h3>
-				  </div>
-				  <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-				    <div class="panel-body">
-				      <div class="row menu-row">
-				
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Завтрак:</h2>
-							</div>
-						</div>
-					
-						<h2>Сырники со сметаной</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>358 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>41 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>11 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>22 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Перекус:</h2>
-							</div>
-						</div>
-					
-						<h2>Морковные маффины </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>390 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>12 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>6 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>75 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Обед:</h2>
-							</div>
-						</div>
-						<h2>Стейк лосося в цитрусовом соусе, Рис с овощным тар-таром</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>463 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>35 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>13 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>52 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Второй обед:</h2>
-							</div>
-						</div>
-						<h2>Индейка терияки, Спагетти с вялеными томатами</h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>450 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>46 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>8 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>54 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12">
-							<div class="col-lg-3">
-								<h2 class="dinner-time">Ужин:</h2>
-							</div>
-						</div>
-						<h2>Салат : из куриного филе с фасолью в йогуртовой заправке </h2>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>288 Ккал</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>30 Белков</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>7,4 Жиров</h3>
-								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<h3>25,8 Углеводов</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- row-menu -->
-				    </div>
-				  </div>
-				</div>
-				<!-- END default -->
-			</div>
-
 		</div>
-	</section>
-
-	<section id="why" class="advantages">
-		<div class="container">
-			<h1>Преимущества</h1>
-
-			<div class="grid">
-
-				<div class="grid-item grid-item1 item-advantages1">
-					<div class="advan-img">
-						<img src="img/plus1.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text advan-text1">Здоровье <br>Полезное питание -<br> основа для здоровья</p>
-				</div>
-
-				<div class="grid-item grid-item2 item-advantages2">
-					<div class="advan-img">
-						<img src="img/plus2.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text advan-text2">Cкажи "нет" магазинам и очередям!</p>
-				</div>
-
-				<div class="grid-item grid-item3 item-advantages3">
-					<div class="advan-img">
-						<img src="img/plus3.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text advan-text3">Ощутимые результаты <br> в спорте <br>и медицинской диете</p>
-				</div>
-
-				<div class="grid-item grid-item4 item-advantages4">
-					<div class="advan-img">
-						<img src="img/plus4.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text advan-text4">Экономьте время <br>для более <br>важных вещей</p>
-				</div>
-				<div class="grid-item grid-item5 item-advantages5">
-					<div class="advan-img">
-						<img src="img/plus5.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text advan-text5">Профессиональный <br>диетолог подбирает <br>рацион бесплатно</p>
-				</div>
-
-			</div>
-
-
-			<!-- <div class="masonry">
-				<div class="item-advantages1">
-					<div class="advan-img">
-						<img src="img/plus1.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text">Здоровье Полезное питание - основа для здоровья</p>
-				</div>
-				<div class="item-advantages2">
-					<div class="advan-img">
-						<img src="img/plus2.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text">скажи "нет" магазинам и очередям!</p>
-				</div>
-				<div class="item-advantages3">
-					<div class="advan-img">
-						<img src="img/plus3.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text">Ощутимые результаты в спорте и медицинской диете</p>
-				</div>
-				<div class="item-advantages4">
-					<div class="advan-img">
-						<img src="img/plus4.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text">Экономьте время для более важных вещей</p>
-				</div>
-				<div class="item-advantages5">
-					<div class="advan-img">
-						<img src="img/plus5.jpg" alt="image">
-					</div>
-					<div class="advan-img-dark">
-						
-					</div>
-					<p class="advan-text">Профессиональный диетолог подбирает рацион бесплатно</p>
-				</div>
-			</div> -->
+	</div>
+</div>										<div class="edit_top_wrap inverse" id="_lp_block_10001841" data-block-layout="48041">
+	<div class="edit_top">
+				<div class="edit_first">
+			<div class="title"><b>О нас</b></div>
+			<div class="text"><p style="margin-top: 0px; margin-bottom: 0px;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>ОКНА ДОМА</strong>&nbsp;за 6 лет продуктивной работы на рынке Владимирского региона заслужила доверие крупных корпоративных клиентов, таких как: сеть бытовой электроники Эльдорадо, продуктовая сеть Дикси, ТЦ Мегаторг, АО Ростелеком, сеть Славянская Аптека и реализовала несколько сотен заказов от физических лиц на бытовое остекленение. С частным отзывами можно ознакомиться в соответствующем разделе нашего сайта.</span></p></div>
 		</div>
-	</section>
-	<section id="comment" class="comment">
-		<div class="wave2-sprite"></div>
-		<div class="wave3-sprite"></div>
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-			<div class="container">
-			<h1>Отзывы довольних покупателей</h1>
-				<!-- Indicators -->
-				<ol class="carousel-indicators">
-				  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-				  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-				  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				</ol>
-
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-				  <div class="item active slider-item">
-				    <img src="img/comment1.jpg" alt="img">
-				    <div class="name-slider">
-						<p>Ирина MIX Михейкина <a href="https://vk.com/mikhej">
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</a></p>
-						
-				    </div>
-				    <div class="carousel-caption">
-				    	
-				     	 <div class="comment-text">
-				     	 	<p>А вы слышали, что есть жирное опасно?!  Что нужно кушать сбалансированно, белки, жиры, углеводы….? Составлять дневной рацион??? <br>
-Да стомилионов раз!)  Я вот все время вижу это в соцсетях, по телеку,  в журналах, да уж куда там!.... все друзья об этом трезвонят) «божечки! - думала я - они все жертвы моды!»! Ну и все в таком духе… <br>
-НО! Нужно придерживаться важного правила  - есть нужно как минимум 5 раз в день, причем углеводы в первой половине дня, а белок во второй.  А это значит что бизнес-ланчи не прокатят, и еду нужно готовить себе в контейнерах на весь день( <br>
-Если Вы тоже с тоской об этом думаете, то вот решение, которое я нашла для себя! <br>
-Студия правильного питания  #Vitae и мой диетолог  #dashafitnesbzik  такие молодцы! Здесь мне подобрали меню по моим вкусовым предпочтениям и по БЖУ  (реально прям спросили, что я люблю, а что нет), добавили в мой рацион новые продукты, которые я сама себе каждый день покупать и готовить ленюсь) И самое убойное!: я теперь каждый день ем десерты без калорий и углеводов, и без страха  поправиться) все эти прелести Вам привезут в любую точку города. <br>
-P.S.  Теперь я знаю «что такое съесть, что бы не поправиться»)
-</p>
-				     	 </div>
-				    </div>
-				  </div>
-				  <div class="item slider-item">
-				    <img src="img/comment.jpg" alt="img">
-				    <div class="name-slider">
-						<p>Сергей Лийц <a href="#">
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</a></p>
-						
-				    </div>
-				    <div class="carousel-caption">
-				    	
-				     	 <div class="comment-text">
-				     	 	<p>Ребята открыли для меня абсолютно новый сервис, в котором сочетаются не только разработанная карта питания, но и колоссальную экономию времени! Я забыл про готовку, ненавистные очереди в гипермаркете и горы посуды. Спасибо за вкусную кухню и всегда своевременный привоз питания. </p>
-				     	 </div>
-				    </div>
-				  </div>
-				  <div class="item slider-item">
-				    <img src="img/comment3.jpg" alt="img">
-				    <div class="name-slider">
-						<p>Алена Федорова <a href="https://vk.com/fedorovaad">
-							<i class="fa fa-vk" aria-hidden="true"></i>
-						</a></p>
-						
-				    </div>
-				    <div class="carousel-caption">
-				    	
-				     	 <div class="comment-text">
-				     	 	<p>Я когда-то думала, что правильные питание - это не вкусно, уныло, есть нужно только траву и вареную куриную грудку...каждый раз впадала в уныние, когда приходилось сесть на очередную диету, но как же я ошибалась <br>
-То, что делают эти ребята - просто из разряда мистики. <br>
-Фантастически вкусео, всегда свежее, всегда радует глаз и душу. <br>
-Усомнилась в своих кулинарных способностях) <br>
-Не думала что правильное питание может быть на столько вкусным, не думала что на ночь можно есть кексы)))волшебство <br> 
-Советую всем, особенно тем кто хотят вкусно похудеть или вкусно соблюдать форму</p>
-				     	 </div>
-				    </div>
-				  </div>
+					</div>
+</div>										<div class="steps_wrap " id="_lp_block_10002041" data-block-layout="4441">
+	<div class="steps_block">
+				<div class="steps_title">Этапы работ</div>
+		<div class="steps_inner">
+						<div class="steps">
+				<div class="steps_wr clear-self">
+					<div class="number">1</div>
+					<div class="title">Вы оставляете заявку на товар</div>
 				</div>
-
-				<!-- Controls -->
-				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-				  <span class="slide-left" aria-hidden="true"></span>
-				  <span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-				  <span class="slide-right" aria-hidden="true"></span>
-				  <span class="sr-only">Next</span>
-				</a>
+			</div>
+						<div class="steps">
+				<div class="steps_wr clear-self">
+					<div class="number">2</div>
+					<div class="title">Мы обрабатываем Ваш заказ</div>
+				</div>
+			</div>
+						<div class="steps">
+				<div class="steps_wr clear-self">
+					<div class="number">3</div>
+					<div class="title">Наш курьер доставляет Ваш заказ</div>
+				</div>
+			</div>
+						<div class="steps">
+				<div class="steps_wr clear-self">
+					<div class="number">4</div>
+					<div class="title">Вы подтверждаете получение товара</div>
+				</div>
+			</div>
+					</div>
+			</div>
+</div>										<div class="advantages_wrapper " id="_lp_block_10002241" data-block-layout="4641">
+	<div class="adv_title_wr">
+		<div class="block_title">Наши преимущества</div>
+	</div>
+				<div class="adv_block">
+		<div class="adv_inner">
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M45.961 38.575l.702-.144a3.015 3.015 0 0 0 2.35-3.517l-.357-1.857 1.565-1.06a3.015 3.015 0 0 0 .825-4.148l-1.04-1.578 1.04-1.58a3.015 3.015 0 0 0-.825-4.147l-1.565-1.06.357-1.857a3.015 3.015 0 0 0-2.35-3.516l-1.852-.381-.38-1.852a3.015 3.015 0 0 0-3.517-2.35l-1.857.358-1.06-1.566a3.015 3.015 0 0 0-4.148-.825l-1.578 1.04-1.58-1.04a3.014 3.014 0 0 0-4.147.825l-1.06 1.566-1.857-.358a3.014 3.014 0 0 0-3.516 2.35l-.381 1.852-1.852.38a3.015 3.015 0 0 0-2.35 3.517l.358 1.857-1.566 1.06a3.015 3.015 0 0 0-.825 4.148l1.04 1.579-1.04 1.578a3.015 3.015 0 0 0 .825 4.148l1.566 1.06-.358 1.857a3.015 3.015 0 0 0 2.35 3.517l1.852.38.38 1.852a3.014 3.014 0 0 0 3.517 2.35l1.857-.357 1.029 1.519-4.624 10.384c-.223.5-.656.531-.963.077l-1.518-2.252a1.754 1.754 0 0 0-1.55-.69l-2.69.378c-.547.077-.805-.277-.587-.767l2.164-4.86.005-.012 1.635-3.671a1 1 0 0 0-1.827-.814l-.69 1.548-3.114 6.996a2.49 2.49 0 0 0 2.693 3.56l2.442-.343 1.38 2.045a2.487 2.487 0 0 0 4.447-.382l4.442-9.976a2.992 2.992 0 0 0 2.534-.35l1.579-1.04 1.578 1.04a2.986 2.986 0 0 0 2.06.456l4.395 9.87a2.487 2.487 0 0 0 4.448.382l1.38-2.045 2.442.343a2.49 2.49 0 0 0 2.693-3.56zm-12.858 3.584a1.643 1.643 0 0 0-1.665 0l-1.847 1.217A1.015 1.015 0 0 1 28.2 43.1l-1.24-1.831a1.643 1.643 0 0 0-1.538-.637l-2.173.418a1.015 1.015 0 0 1-1.18-.788l-.445-2.167a1.643 1.643 0 0 0-1.176-1.177l-2.168-.446a1.015 1.015 0 0 1-.788-1.179l.418-2.172a1.643 1.643 0 0 0-.637-1.538l-1.831-1.24a1.015 1.015 0 0 1-.277-1.392l1.217-1.847a1.643 1.643 0 0 0 0-1.665l-1.217-1.847a1.014 1.014 0 0 1 .277-1.391l1.831-1.24a1.643 1.643 0 0 0 .637-1.538l-.418-2.173a1.015 1.015 0 0 1 .788-1.18l2.168-.445a1.643 1.643 0 0 0 1.176-1.177l.446-2.167a1.015 1.015 0 0 1 1.18-.788l2.172.418a1.643 1.643 0 0 0 1.537-.637L28.2 9.442a1.015 1.015 0 0 1 1.391-.277l1.847 1.217a1.643 1.643 0 0 0 1.665 0l1.847-1.217a1.015 1.015 0 0 1 1.391.277l1.24 1.831a1.643 1.643 0 0 0 1.539.637l2.172-.418a1.015 1.015 0 0 1 1.18.788l.445 2.167a1.643 1.643 0 0 0 1.177 1.177l2.167.446a1.015 1.015 0 0 1 .788 1.18l-.418 2.172a1.643 1.643 0 0 0 .637 1.537l1.831 1.241a1.015 1.015 0 0 1 .277 1.391l-1.217 1.847a1.643 1.643 0 0 0 0 1.665l1.217 1.847a1.014 1.014 0 0 1-.277 1.391l-1.831 1.24a1.643 1.643 0 0 0-.637 1.539l.418 2.172a1.015 1.015 0 0 1-.788 1.18l-2.167.445a1.643 1.643 0 0 0-1.177 1.177l-.446 2.167a1.015 1.015 0 0 1-1.179.788l-2.172-.418a1.643 1.643 0 0 0-1.538.637l-1.24 1.831a1.015 1.015 0 0 1-1.392.277zm15.75 9.913l-2.69-.379a1.754 1.754 0 0 0-1.55.69l-1.52 2.253c-.305.454-.739.423-.962-.077l-4.44-9.972a2.98 2.98 0 0 0 .306-.366l1.06-1.565 1.857.357a3.015 3.015 0 0 0 3.517-2.35l.085-.416 4.924 11.058c.218.49-.04.844-.588.767zm-7.919-30.816a1 1 0 1 0 2 0 1 1 0 1 0-2 0zM44 26.001V25a1 1 0 0 0-2 0v1.002a1.023 1.023 0 0 0 .012.153l-.013.008a10 10 0 1 1-3.577-7.828l.001-.001.625.582a1 1 0 0 0 1.364-1.463l-.177-.165.01-.006q-.226-.214-.464-.416l-.102-.096a1.014 1.014 0 0 0-.161-.123A12 12 0 1 0 44 26.001z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Доставка</div>
+						<div class="text">Прямая доставка с завода</div>
+					</div>
+				</div>
+			</div>
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M46 46a5 5 0 0 0 1.404-9.8 16.964 16.964 0 0 1-.996 1.828 3 3 0 1 1-3.284 3.828 17.072 17.072 0 0 1-1.654 1.264A5 5 0 0 0 46 46zm-28 4a8.961 8.961 0 0 1-5.554-1.918l-.741-.644a1 1 0 0 0-1.313 1.51l.061.052-.001.001a11.003 11.003 0 0 0 17.574-3.468 16.871 16.871 0 0 1-1.935-.588A9 9 0 0 1 18 50zm-8.842-7.359a1.024 1.024 0 0 0-.027-.1A9.013 9.013 0 0 1 15.34 32.4a16.985 16.985 0 0 1-.283-2.002A11.015 11.015 0 0 0 7.36 43.802l.05.235a1 1 0 0 0 1.956-.416zM13 41a5 5 0 0 0 9.53 2.12 17.072 17.072 0 0 1-1.654-1.264 3 3 0 1 1-3.284-3.829 16.964 16.964 0 0 1-.996-1.827A5.002 5.002 0 0 0 13 41zm35.943-10.602c-.006.077-.018.152-.025.228.05-.535.082-1.077.082-1.626a16.951 16.951 0 0 0-1.24-6.384 1.02 1.02 0 0 0-.07-.202l-.54-1.16a1 1 0 1 0-1.813.845l.466 1-.006.005a14.994 14.994 0 1 1-6.832-7.392l.026.015 1.12.62a1 1 0 1 0 .969-1.75l-.508-.28a16.999 16.999 0 1 0-3.554 30.928c-.344.106-.691.203-1.044.288a11.002 11.002 0 1 0 12.97-15.135zM46 50a9 9 0 0 1-8.091-5.055c-.247.091-.498.173-.75.253a17.008 17.008 0 0 0 11.728-14.294 16.991 16.991 0 0 1-.227 1.496A9.001 9.001 0 0 1 46 50zm-3.173-31.76a1 1 0 1 0 2 0 1 1 0 1 0-2 0zM32.596 30.192a5.808 5.808 0 0 0 3.753-1.072 3.747 3.747 0 0 0 1.318-3.085 3.534 3.534 0 0 0-1.2-2.9 5.598 5.598 0 0 0-3.608-.985h-3.7V32H27v2h2.16v2h2.1v-2H35v-2h-3.74v-1.808zm-1.336-6.284h1.459a3.343 3.343 0 0 1 2.11.545 1.995 1.995 0 0 1 .676 1.652 2.047 2.047 0 0 1-.756 1.758 4 4 0 0 1-2.373.563H31.26z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Оплата</div>
+						<div class="text">Оплата любыми удобными способамт</div>
+					</div>
+				</div>
+			</div>
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M53.06 24.626l-11.163-1.622a2.317 2.317 0 0 1-1.353-.983L35.55 11.905a2.857 2.857 0 0 0-5.354 0l-4.992 10.116a2.318 2.318 0 0 1-1.354.983l-11.163 1.622a2.857 2.857 0 0 0-1.654 5.093l8.077 7.873a2.317 2.317 0 0 1 .517 1.592L17.722 50.3a2.857 2.857 0 0 0 4.331 3.147l9.985-5.249a2.318 2.318 0 0 1 1.673 0l9.984 5.25a2.857 2.857 0 0 0 4.332-3.148l-.212-1.233-.008.001-.066-.418a1 1 0 0 0-1.976.313l.157.99a1.01 1.01 0 0 0 .048.187l.086.498c.186 1.087-.448 1.556-1.43 1.04l-9.984-5.25a4.239 4.239 0 0 0-3.535 0l-9.984 5.25c-.976.512-1.618.054-1.43-1.04L21.6 39.522a4.239 4.239 0 0 0-1.093-3.362l-8.077-7.874c-.79-.77-.552-1.52.546-1.68l11.163-1.623a4.239 4.239 0 0 0 2.86-2.077L31.99 12.79c.488-.99 1.276-.995 1.767 0l4.992 10.115a4.238 4.238 0 0 0 2.86 2.077l11.163 1.622c1.09.159 1.34.907.546 1.681L45.24 36.16a4.26 4.26 0 0 0-1.104 3.284l.003.014.157.99a1 1 0 0 0 1.975-.313l-.157-.99-.002-.015a2.356 2.356 0 0 1 .524-1.538l8.078-7.874a2.857 2.857 0 0 0-1.655-5.092zM45.037 44.51a1 1 0 1 0 2 0 1 1 0 1 0-2 0zM28.125 32.874a1 1 0 0 0-1.948-.396l-.01-.003a6.993 6.993 0 1 0 4.643-5.126 1 1 0 0 0-.132.045l-.108.04.006.01a1.001 1.001 0 0 0 .932 1.771l.005.01a4.995 4.995 0 1 1-3.43 3.863 1.01 1.01 0 0 0 .042-.214z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Качество</div>
+						<div class="text">Качественный продукт</div>
+					</div>
+				</div>
+			</div>
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M31 11a1 1 0 1 0 2 0 1 1 0 1 0-2 0zm20.606 17.061a19.886 19.886 0 0 0-3.203-7.497 2.957 2.957 0 0 0-.383-3.632l.005-.005a21.999 21.999 0 0 0-9.776-6.027 1.03 1.03 0 0 0-.314-.122l-.634-.135q-.15-.037-.301-.072v.008l-1.003-.213a1 1 0 1 0-.416 1.956l1.419.302v.006a19.984 19.984 0 0 1 9.564 5.666l-.001.002a1 1 0 1 1-1.438 1.388l-.005.005a17.981 17.981 0 0 0-26.334.09l-.006-.006a.997.997 0 1 1-1.427-1.392 19.989 19.989 0 0 1 9.582-5.736l1.485-.343a1 1 0 1 0-.45-1.949l-.97.224v-.008q-.28.065-.559.137l-.401.093a1.04 1.04 0 0 0-.228.081 21.997 21.997 0 0 0-9.857 6.068l-.002-.002c-.008.008-.014.018-.022.027l-.01.009h.001a2.966 2.966 0 0 0-.397 3.68 19.889 19.889 0 0 0-3.131 7.397A4.984 4.984 0 0 0 8 32.997v6.006a5 5 0 0 0 10 0v-6.006a4.981 4.981 0 0 0-3.596-4.773 17.892 17.892 0 0 1 2.698-6.316 2.914 2.914 0 0 0 3.04-.676l.013.012a16 16 0 0 1 23.678-.014l.016-.015a2.912 2.912 0 0 0 2.992.611 17.89 17.89 0 0 1 2.755 6.399A4.984 4.984 0 0 0 46 32.997v6.006a4.98 4.98 0 0 0 3.508 4.745l-2.505 5.01A2.57 2.57 0 0 1 45.008 50h-2.009a1 1 0 0 0 0 2h2.009a4.543 4.543 0 0 0 3.784-2.348l2.859-5.718A4.985 4.985 0 0 0 56 39.003v-6.006a4.981 4.981 0 0 0-4.394-4.936zM16 32.997v6.006a3 3 0 0 1-6 0v-6.006a3 3 0 0 1 6 0zm38 6.006a3 3 0 0 1-6 0v-6.006a3 3 0 0 1 6 0zM39.001 50h-2.142a4 4 0 1 0 0 2H39a1 1 0 0 0 0-2zM33 53a2 2 0 1 1 2-2 2 2 0 0 1-2 2z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Менеджеры</div>
+						<div class="text">Вежливые менеджеры подберут оптимальное решение</div>
+					</div>
+				</div>
+			</div>
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M23.5 17a.993.993 0 0 0 1-.99v-4.02a1 1 0 0 0-2 0v4.02a1 1 0 0 0 1 .99zm4-2h10a1 1 0 0 0 0-2h-10a1 1 0 0 0 0 2zm14 2a.993.993 0 0 0 1-.99v-4.02a1 1 0 0 0-2 0v4.02a1 1 0 0 0 1 .99zm9.502-4H45.5a1 1 0 0 0 0 2h5.503A1.996 1.996 0 0 1 53 17v30a2 2 0 0 1-1.998 2H50a1 1 0 0 0 0 2h1.003A4 4 0 0 0 55 47V17a3.996 3.996 0 0 0-3.998-4zM45 50a1 1 0 1 0 2 0 1 1 0 1 0-2 0zm-2.999-1H12.998A1.997 1.997 0 0 1 11 47V17a2 2 0 0 1 1.998-2H19.5a1 1 0 0 0 0-2h-6.502A4 4 0 0 0 9 17v30a3.996 3.996 0 0 0 3.998 4H42a1 1 0 0 0 0-2zM35 24a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm9 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm-18 8a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm-9 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm16 0a4 4 0 1 0 4-4 4 4 0 0 0-4 4zm6 0a2 2 0 1 1-2-2 2 2 0 0 1 2 2zm5 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm-18 8a2 2 0 1 0 4 0 2 2 0 1 0-4 0zm-9 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Сертификаты</div>
+						<div class="text">Наличие сертификатов на продукцию</div>
+					</div>
+				</div>
+			</div>
+						<div class="adv_item">
+				<div class="adv_in">
+										<div class="pic">
+													<svg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 64 64'><path d='M52.031 15.133a19.354 19.354 0 0 1-.766-.034 36.532 36.532 0 0 1-2.136-.194 33.792 33.792 0 0 1-6.455-1.38q-.796-.26-1.536-.561a27.242 27.242 0 0 1-3.013-1.446 24.615 24.615 0 0 1-3.551-2.392 13.04 13.04 0 0 1-1.12-.999l-1.221-1.294-1.427 1.063-.332.243a81.334 81.334 0 0 1-3.882 2.662q-.669.429-1.295.807a23.287 23.287 0 0 1-3.021 1.594 24.077 24.077 0 0 1-4.356 1.103 76.11 76.11 0 0 1-4.202.625 86.815 86.815 0 0 1-1.904.212l-1.933.18.123 1.938a71.839 71.839 0 0 0 .143 1.693c.128 1.322.3 2.793.524 4.376a92.963 92.963 0 0 0 2.816 13.305C17.214 49.217 23.12 56.98 31.995 57c8.891.02 14.8-7.75 18.527-20.367q.354-1.197.672-2.422l-.005-.001.168-.625a1 1 0 0 0-1.932-.517l-.26.968a1.013 1.013 0 0 0-.023.111C46.464 44.22 41.4 55.021 32 55c-17.6-.04-20-37.867-20-37.867s7.686-.719 11.029-2.078C26.353 13.703 32 9.5 32 9.5a25.589 25.589 0 0 0 8.385 5.316A36.734 36.734 0 0 0 52 17.133s-.191 3.019-.861 7.351a1.03 1.03 0 0 0-.024.112l-.157.99a1 1 0 0 0 1.975.313l.102-.646.008.001q.153-.962.288-1.926c.223-1.583.395-3.054.522-4.376a70.834 70.834 0 0 0 .143-1.693l.133-2.093zM50.21 29.596a1 1 0 1 0 2 0 1 1 0 1 0-2 0zM21.001 22a1 1 0 0 0 0-2h-6.179l.185 2.17.033.35c.027.27.061.585.102.937.117 1 .269 2.113.46 3.31a74.783 74.783 0 0 0 2.275 10.068c2.957 9.661 7.43 15.65 14.118 15.665 6.7.015 11.177-5.98 14.135-15.666a74.952 74.952 0 0 0 2.27-10.068c.19-1.197.341-2.31.458-3.31a56.236 56.236 0 0 0 .135-1.286l.185-2.17H25.999a1 1 0 0 0 0 2H47s-2.43 28.529-15 28.5S17 22 17 22h4.001z'/></svg>
+											</div>
+										<div class="text_wrap">
+						<div class="title">Забота</div>
+						<div class="text">Качественная комплектация известных марок</div>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+	</div>										<div class="quest_wrapper " id="_lp_block_10002441" data-block-layout="48641">
+	<div class="quest_block">
+		<div class="quest_in">
+						<div class="left_bl">
+				<div class="left_in">
+					<div class="question">?</div>
+					<div class="text_wrap">
+						<div class="title">Остались вопросы?</div>
+						<div class="text">Оставьте заявку и наш менеджер будет рад ответить на Ваши вопросы</div>
+					</div>
+				</div>
+			</div>
+									<div class="quest_but"><a href="index.html#" class="my_but" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500641&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">Задать вопрос</a></div>
+					</div>
+	</div>
+</div>										<div class="tariffs_wrapper " id="_lp_block_10002641"  data-block-layout="5041">
+		<div class="tariffs_wrap">
+				<div class="tariffs_title">Тарифы</div>
+		<div class="tariffs"><div class="tariff tar1"><div class="pic"><img src="profil_veka.jpg" alt="" /></div><div class="title">Профиль ВЕКА</div><div class="text">Монтажная шлубина 60мм - 2х створчатое окно ширина 1300 высота 1400. Заполнение 2х какмерный стеклопакет, фурнитура классик.</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">11 750 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div><div class="tariff tar2"><div class="pic"><img src="okna_veka.jpg" alt="" /></div><div class="title">ОКНА VEKA</div><div class="text">Трехстворчатое окно, по центру поворотно-откидное окно, ширина 2100 высота 1400. Заполнение 2х какмерный стеклопакет, фурнитура &quot;Зигения&quot; классик.</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">14 130 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div><div class="tariff tar3"><div class="pic"><img src="balkonnyy_blok.png" alt="" /></div><div class="title">БАЛКОННЫЙ БЛОК</div><div class="text">(выход на балкон) глухое окно 1300мм Х1400мм, дверь - высота 2100 ширина 700. Заполнение: 2-х камерный стеклопакет, фурнитура &quot;Зигения&quot; классик.</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">15 760 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div><div class="tariff tar1"><div class="pic"><img src="alyuminiyevaya_lodzhiya.jpg" alt="" /></div><div class="title">АЛЮМИНИЕВАЯ ЛОДЖИЯ</div><div class="text">Заполнение - стекло 4мм. Три створки, ширина 3000мм высота 1500мм, подоконник, отлив, козырек.</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">15 300 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div><div class="tariff tar2"><div class="pic"><img src="lodzhiya_plastik.jpg" alt="" /></div><div class="title">ЛОДЖИЯ ПЛАСТИК</div><div class="text">Качественнее алюминиевой и можно использовать однокамерный стеклопакет.</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">18 300 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div><div class="tariff tar3"><div class="pic"><img src="alyuminiyevy_dveri.jpg" alt="" /></div><div class="title">АЛЮМИНИЕВЫ ДВЕРИ</div><div class="text">Алюминиевые холодные двери 40 серии (применение в офисных перегородках)</div><div class="price_wr"><div class="pr_title">Стоимость под ключ</div><div class="price">9 870 руб.</div></div><div class="tariff_but"><a href="index.html#" class="tariff_form" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29500841&param[tpl]=global:anketa.block.tpl&param[custom_params]=placeholdered_fields=1||after_button_class=noteFormBottom||after_title_class=noteForm||button=1||title_class=popup-title&ver_id=1398362" data-api-type="popup-form">ЗАКАЗАТЬ</a></div></div></div>
+			</div>
+</div>										<div class="why_us_wrapper  inverse" id="_lp_block_10002841" data-block-layout="5241">
+	<div class="why_us_wrap">
+		<div class="jblock_title">Почему выбирают нас?</div>
+			<div class="jblock_titles">
+				<div class="left_wr">
+				<div class="title_l">При работе с другими:</div>
+			</div>
+			<div class="right_wr">
+				<div class="title_r">При работе с нами:</div>
 			</div>
 		</div>
-	</section>
-
-	<footer id="contacts">
-		<div class="container">
-		<h1 class="text-center">Наши контакты</h1>
-			<div class="row contact-row">
-				<div class="img-contact1 col-lg-4 col-md-3 col-sm-6 col-xs-12">
-					<img src="img/contact1.jpg" alt="image">
+			<div class="jblock_wrap">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+			<div class="jblock_l">
+				<div class="title">При работе с другими:</div>
+								<div class="jblock equal">
+					<div class="text">Сборка в не профессиональных помещениях</div>
+					<div class="icon"></div>
 				</div>
-				<div class="coffee-address col-lg-2 col-md-3 col-sm-6 col-xs-12">
-					<p class="address"><b>Адрес кафе:</b></p>
-					<p>дворянская 27а,</p>
-					<p>Фитнес-центр "Муравей",</p>
-					<p>2 этаж.</p>
+								<div class="jblock equal">
+					<div class="text">Доставка платная</div>
+					<div class="icon"></div>
 				</div>
-				<div class="question-col col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="question">
-						<h2>Остались вопросы? Напишите нам!</h2>
-						<button type="button" class="center-block" data-toggle="modal" data-target="#modal-question">Задать вопрос</button>
+								<div class="jblock equal">
+					<div class="text">Вынос мусора платный</div>
+					<div class="icon"></div>
+				</div>
+								<div class="jblock equal">
+					<div class="text">Отказ от предоставленных гарантий</div>
+					<div class="icon"></div>
+				</div>
+								<div class="jblock equal">
+					<div class="text">Невежливое общение с клиентом</div>
+					<div class="icon"></div>
+				</div>
+							</div>
+									<div class="jblock_r">
+				<div class="title">При работе с нами:</div>
+								<div class="jblock equal">
+					<div class="icon"></div>
+					<div class="text">Быстрое изготовления изделий</div>
+				</div>
+								<div class="jblock equal">
+					<div class="icon"></div>
+					<div class="text">Сборка в специализированных цехах</div>
+				</div>
+								<div class="jblock equal">
+					<div class="icon"></div>
+					<div class="text">Работаем без посредников</div>
+				</div>
+								<div class="jblock equal">
+					<div class="icon"></div>
+					<div class="text">Точные сроки изготовления и доставки</div>
+				</div>
+								<div class="jblock equal">
+					<div class="icon"></div>
+					<div class="text">Любые способы оплаты</div>
+				</div>
+							</div>
 					</div>
-				</div>
 			</div>
-			<div class="row">
-				<div class="map-yandex col-lg-5 col-md-4 col-sm-6 col-xs-12">
-					<img src="img/contact3.jpg" alt="image">
+</div>										<div class="clients_wrapper " id="_lp_block_10003041" data-block-layout="5441">
+	<div class="title_wrap">
+		<div class="title">Наши клиенты</div>	</div>
+		<div class="clients_wrap">
+		<div class="sl_wrap">
+			<div class="clients_slider">
+								<div class="cl_item">
+					<a href="index.html" class="pic"><img src="5ab3268503ba99f07b3a6bf8d7012bed.png" alt="Картинка 1" /></a>
 				</div>
-				<div class="map-yandex col-lg-7 col-md-8 col-sm-6 col-xs-12">
-					<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZrfuZ7m" frameborder="0" allowfullscreen></iframe>
+								<div class="cl_item">
+					<a href="index.html" class="pic"><img src="567bd3d4a0b14.jpg" alt="Картинка 2" /></a>
 				</div>
+								<div class="cl_item">
+					<a href="index.html" class="pic"><img src="eldorado_logo_02.jpg" alt="Картинка 3" /></a>
+				</div>
+								<div class="cl_item">
+					<a href="index.html" class="pic"><img src="image.png" alt="Картинка 4" /></a>
+				</div>
+							</div>
+		</div>
+	</div>
+	</div>										<div class="reviews_wrapper " id="_lp_block_10003241" data-block-layout="5641" style="background:url(fgs16_middle-pic.jpg) 50% 0 /cover no-repeat">
+	<div class="reviews_wrap">
+		<div class="reviews_wrap_in">
+						<div class="rev_title">Что говорят о нас клиенты?</div>
+			<div class="rev_slider">
+								<div class="rev_slide">
+										<div class="pic">
+						<img src="aleksandr_sidorov.jpg" alt="Александр Сидоров" />
+					</div>
+										<div class="text">Хочу выразить огромную благодарность компании &quot;ОКНА ДОМА&quot; за отлично выполненную работу. Замеры произвели в день заказа окон, произвели и установили четко в обговорённую дату, без задержек и различных причин как обычно это бывает в других компаниях. Мастер Александр очень приветливый, аккуратный и внимательный, все было сделано быстро , без каких- либо трудностей. Заказываю окна в этой компании уже в четвертый раз и всегда оставался довольный от качества и обслуживания, а самое главное от ЦЕНЫ. Заказывайте окна в компании &quot;ОКНА ДОМА&quot; и вопрос с окнами в Вашем доме будет решен!</div>					<div class="title">Александр Сидоров</div>					<div class="desc">Страница ВКонтакте: https://vk.com/sidorochek</div>				</div>
+								<div class="rev_slide">
+										<div class="pic">
+						<img src="lugovkina_natalya.jpg" alt="Луговкина Наталья" />
+					</div>
+										<div class="text">Сотрудники работают оперативно, терпеливо вникают в проблему и все  объясняют. Огромное спасибо Воскресенскому Алексею за профессионализм и терпение в работе с клиентами!</div>					<div class="title">Луговкина Наталья</div>					<div class="desc">Страница ВКонтакте: https://vk.com/id60430119</div>				</div>
+								<div class="rev_slide">
+										<div class="pic">
+						<img src="petr_barkar.jpg" alt="Петр Баркар" />
+					</div>
+										<div class="text">Заказываю не первый раз в окна дома- сначала окна на кухню, а потом и лоджию остеклил, приятно - сделали подарок Москитную сетку! Доволен качеством!</div>					<div class="title">Петр Баркар</div>					<div class="desc">Профиль в одноклассниках: https://ok.ru/profile/514155089781</div>				</div>
+							</div>
+					</div>
+	</div>
+</div>										<div class="sert_wrapper " id="_lp_block_10003641" data-block-layout="6041">
+	<div class="sert_title_wr">
+		<div class="sert_title">Лицензии и сертификаты</div>	</div>
+	<div class="sert_wrap">
+				<div class="sert_block">
+						<div class="sert">
+				<a href="0001.jpg" class="pic"><img src="0001.jpg.1" alt="Картинка 1" /></a>
 			</div>
-		
-			<div class="row">
-				<div class="forma col-lg-7 col-md-7 col-sm-6 col-xs-12">
-					<h3>Made by <a href="www.formasite.ru">Forma</a></h3>
+						<div class="sert">
+				<a href="0002.jpg" class="pic"><img src="0002.jpg.1" alt="Картинка 2" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_68bc636be4c73ba1_001.jpg" class="pic"><img src="o_68bc636be4c73ba1_001.jpg.1" alt="Картинка 3" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_68bc636be4c73ba1_002.jpg" class="pic"><img src="o_68bc636be4c73ba1_002.jpg.1" alt="Картинка 4" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_c1b6d6dd77ef0fd0_001.jpg" class="pic"><img src="o_c1b6d6dd77ef0fd0_001.jpg.1" alt="Картинка 5" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_c1b6d6dd77ef0fd0_002.jpg" class="pic"><img src="o_c1b6d6dd77ef0fd0_002.jpg.1" alt="Картинка 6" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_c1363aa48a5fc6e1_001.jpg" class="pic"><img src="o_c1363aa48a5fc6e1_001.jpg.1" alt="Картинка 7" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_c1363aa48a5fc6e1_002.jpg" class="pic"><img src="o_c1363aa48a5fc6e1_002.jpg.1" alt="Картинка 8" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_ccb2a910f8e1d13e_001.jpg" class="pic"><img src="o_ccb2a910f8e1d13e_001.jpg.1" alt="Картинка 9" /></a>
+			</div>
+						<div class="sert">
+				<a href="o_ccb2a910f8e1d13e_002.jpg" class="pic"><img src="o_ccb2a910f8e1d13e_002.jpg.1" alt="Картинка 10" /></a>
+			</div>
+					</div>
+			</div>
+</div>										<div class="special_wrapper " id="_lp_block_10003841" data-block-layout="6241">
+	<div class="special_block_wrapper" style="background:url(fgs16_gal7.jpg) 50% 0 /cover no-repeat;">
+		<div class="special_block_wrap">
+			<div class="special_block">
+								<div class="title_wrap">
+					<div class="block_title">ХОЧУ сэкономить на установке ОКОН!</div>
+					<div class="block_text">Выгода 700 рублей за 1 окно</div>
 				</div>
-				<div class="soc-block col-lg-5 col-md-5 col-sm-6 col-xs-12">
+				<div class="bot_timer_block">
+					<div class="bot_timer_title">До конца акции осталось</div>
+					<div class="timer2">01.09.2016 00:00</div>
+				</div>
+							</div>
+		</div>
+	</div>
+		<div class="form_b_wrapper">
+		<div class="form_b_wrap">
+						<div class="tpl-anketa" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29501041&param[tpl]=global:anketa.block.tpl&param[custom_params]=custom=1||placeholdered_fields=1||hide_title=1||button=1||div_class=form_inner" data-api-type="form"><form  method="post" action="index.html"><input type="hidden" name="form_id" value="29501041"><input type="hidden" name="tpl" value="global:anketa.block.tpl"><div class="form_inner"><div class="tpl-field  type-text"><div class="field-value input-name"><input  type="text" size="30" maxlength="100" value="" name="name" placeholder="Имя " /></div></div><div class="tpl-field  type-text field-required"><div class="field-value input-phone"><input  type="text" size="30" maxlength="100" value="" name="phone" placeholder="Телефон *" /></div></div><div class="tpl-field  tpl-field-button"><button >Заявка</button></div></div></form>
+			<script>
+				$('input[data-datepicker="calendar"]').datepicker({
+					dateFormat: "dd.mm.yy"
+				});
+				
+				$('input[data-datepicker="calendar-from"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
+					
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-to"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "minDate", selectedDate );
+						
+						if (otherInput.val() !="") {
+							valueInput.val(selectedDate + ' -- ' + otherInput.val());
+						}
+						
+					}
+				});
+				$('input[data-datepicker="calendar-to"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-from"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "maxDate", selectedDate );
+						
+						if (otherInput.val() !="") {
+							valueInput.val(otherInput.val() + ' -- ' + selectedDate);
+						}
+						
+					}
+				});
+			</script>
+		</div>	        <div class="form_text">Нажимая отправить заявку, Вы соглашаетесь на обработку персональных данных, согласно действующему законодательству РФ.</div>		</div>
+	</div>
+	</div>										<div class="gallery_wrapper " id="_lp_block_10004041" data-block-layout="6441">
+	<div class="gallery_wrap">
+		<div class="gallery_title">Фотогалерея / Выполненные работы</div>
+			<div class="gallery_block">
+				<div class="gallery_pic"><a href="work1.jpg"><img src="work1o.jpg" alt="Картинка 1" /></a></div>
+				<div class="gallery_pic"><a href="work2o.jpg"><img src="work2o.jpg" alt="Картинка 2" /></a></div>
+				<div class="gallery_pic"><a href="work3.jpg"><img src="work3o.jpg" alt="Картинка 3" /></a></div>
+				<div class="gallery_pic"><a href="work4.jpg"><img src="work4o.jpg" alt="Картинка 4" /></a></div>
+				<div class="gallery_pic"><a href="fgs16_gal5.jpg"><img src="fgs16_gal5.jpg.1" alt="Картинка 5" /></a></div>
+				<div class="gallery_pic"><a href="fgs16_gal6.jpg"><img src="fgs16_gal6.jpg.1" alt="Картинка 6" /></a></div>
+				<div class="gallery_pic"><a href="fgs16_gal7.jpg.1"><img src="fgs16_gal7.jpg.2" alt="Картинка 7" /></a></div>
+				<div class="gallery_pic"><a href="fgs16_gal8.jpg"><img src="fgs16_gal8.jpg.1" alt="Картинка 8" /></a></div>
+			</div>
+		</div>
+</div>										<div class="site-footer " id="_lp_block_10004441" data-block-layout="48841">
+	<div class="site_map">
+		<script type="text/javascript" class="no-reload">$(function() {(function () {mjsMap({data: [{name: "MEGA", coords: "59.851312,30.301015", desc: "MEGAGROUP"}],zoom: "15",center: "56.156524,40.384983",type: "yandex",id: "map_10004441_1474620001"});})();});</script>
+		<div class="map" id="map_10004441_1474620001"></div>
+	</div>
+	<div class="cont_f_wrapper">
+		<div class="cont_f_wrap">
+						<div class="adress_f_wrap">
+				<div class="adress_f">Владимир, ул. Гастелло 8</div>
+			</div>
+									<div class="mail_f_wrap">
+				<div class="mail_f"><a href="mailto:spk33.ru@mail.ru"></a>spk33.ru@mail.ru</div>
+			</div>
+									<div class="phones_f_wr">
+				<div class="phones_f">
+											<div><a href="tel:89101771279">89101771279</a></div>
+											<div><a href="tel:604737">604737</a></div>
+									</div>
+			</div>
+					</div>
+	</div>
+</div>										<div class="footer_wrapper inverse" id="_lp_block_10004641" data-block-layout="49241">
+	<div class="footer_form_wrapper">
+				<div class="footer_form">
+			<div class="form_in">
+				<div class="form_titles">
+					<div class="form_title">ОСТАВЬТЕ ЗАЯВКУ</div>					<div class="form_text">на бесплатную консультацию прямо сейчас</div>				</div>
+				<div class="tpl-anketa" data-api-url="/my/s3/xapi/public/?method=form/postform&param[form_id]=29501241&param[tpl]=global:anketa.block.tpl&param[custom_params]=custom=1||placeholdered_fields=1||hide_title=1||cols=2||button=1||div_class=form_inner||after_button_class=button_text" data-api-type="form"><form  method="post" action="index.html"><input type="hidden" name="form_id" value="29501241"><input type="hidden" name="tpl" value="global:anketa.block.tpl"><div class="form_inner"><div class="cell"><div class="tpl-field  type-text field-required"><div class="field-value"><input type="text" size="30" maxlength="100" value="" name="name" placeholder="Имя *" /></div></div><div class="tpl-field  type-text field-required"><div class="field-value"><input type="text" size="30" maxlength="100" value="" name="mail" placeholder="Эл. почта *" /></div></div><div class="tpl-field  type-text field-required"><div class="field-value"><input type="text" size="30" maxlength="100" value="" name="phone" placeholder="Телефон *" /></div></div></div><div class="cell"></div><input type="hidden" name="after_button" value=""><div class="tpl-field  tpl-field-button"><button >Отправить заявку</button></div><div class="form-text-after-button button_text"><div>Мы свяжемся с Вами в течение 30 мин</div></div></div></form>
+			<script>
+				$('input[data-datepicker="calendar"]').datepicker({
+					dateFormat: "dd.mm.yy"
+				});
+				
+				$('input[data-datepicker="calendar-from"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
+					
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-to"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "minDate", selectedDate );
+						
+						if (otherInput.val() !="") {
+							valueInput.val(selectedDate + ' -- ' + otherInput.val());
+						}
+						
+					}
+				});
+				$('input[data-datepicker="calendar-to"').datepicker({
+					dateFormat: "dd.mm.yy",
+					onClose: function( selectedDate ) {
+						var $this = $(this),
+							otherInput = $(this).parents('.field-value').find('input[data-datepicker="calendar-from"]'),
+							valueInput = $(this).parents('.field-value').find('.init-calendar-interval1');
+							
+						otherInput.datepicker( "option", "maxDate", selectedDate );
+						
+						if (otherInput.val() !="") {
+							valueInput.val(otherInput.val() + ' -- ' + selectedDate);
+						}
+						
+					}
+				});
+			</script>
+		</div>			</div>
+		</div>
+			</div>
+	<div class="footer_block">
+				<div class="logo_f">
+			<a href="index.html"><img src="232424.png" alt="" /></a>
+		</div>
+						<div class="site_name_wr">
+			<div class="site_name_f"><a href="index.html"> </a></div>
+		</div>
+			<div class="site_desc_wr">
+				<div class="site_desc_f">Остекление алюминием и пвх</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+				<div class="made">
+					<h3>Made by <a href="www.formasite.ru" target="_blank">Forma</a></h3>
+				</div>
+				<div class="soc-block ">
 					
 					<ul>
-						<h3>Будем дружить: </h3>
-						<li><a href="https://vk.com/vitaeclub"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.facebook.com/vitaeclub/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.instagram.com/masterskaya_vitae/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true" ></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" ></i></a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
-	</footer>
-	<a class="page-scroll" href="#zakaz"><input class="btn-zakaz" type="button" value="Сделать заказ">
-	</a>
-	<!-- Modal -->
-	<div class="modal fade" id="modal-consult" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
-		    </div>
-		    <div class="modal-body">
-		    <form id="form" action="send.php" method="POST">
-		    	<input type="text" value="Ваше имя" required="required">
-		    	<input type="email" value="Вашa почта" required="required">
-		    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
-		    </form>
-		    </div>
-		  </div>
-		</div>
-	</div>
-
-	<!-- Modal -->
-	<div class="modal fade" id="modal-question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-		  <div class="modal-content">
-		    <div class="modal-header">
-		      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		      <h2 class="modal-title" id="myModalLabel">Отправить <br> нам сообщение</h2>
-		    </div>
-		    <div class="modal-body">
-		    <form id="form" action="send.php" method="POST">
-		    	<input type="text" value="Ваше имя" required="required">
-		    	<input type="email" value="Вашa почта" required="required">
-		    	<button type="submit" class="btn-send" data-dismiss="modal">Отправить</button>
-		    </form>
-		    </div>
-		  </div>
-		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="js/masonry.pkgd.min.js"></script>
-	<script src="https://use.fontawesome.com/9caa7bdbf2.js"></script>
-	<script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
-	<script type="text/javascript">
-
-		function calc(){
-			var total = 0;
-			var data = {
-				'start' : {'kkal' : 880, 'price' : 600},
-				'standart' : {'kkal' : 763, 'price' : 900},
-				'sport' : {'kkal' : 1193, 'price' : 1000},
-				'premium' : {'kkal' : 1270, 'price' : 1150}
-			}
-		
-			for (key in data)
-			{
-				food_count = $('.input-num-food[data-pack-type="'+key+'"]').val();
-				if (food_count == ""){
-					food_count = 0;
-					$('.input-num-food[data-pack-type="'+key+'"]').val(0);
-				} 
-				$('.input-callorie[data-pack-type="'+key+'"]').val(data[key].kkal*food_count); 
-				total += data[key].price*food_count;
-			}
-			$('.result h2 span').text(total+'руб');
-		}
-
-// $('.input-callorie[data-pack-type="'+key+'"]').val(data[key].kkal*food_count);
-// 				total_calorie += data[key].kkal;
-// $('.num-cal-form h4 input-callorie').text(total_calorie+'ккал');
-// $('.num-day[data-pack-type="'+key+'"]').val();
-// total += data[key].price*food_count*numbers_day;
-
-		$('.grid').masonry({
-		  itemSelector: '.grid-item',
-		  columnWidth: 160
-		});
-
-	$(document).ready(function(){
-		$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
-		  // alert('subdmit');
-		        var form_data = $(this).serialize(); //собераем все данные из формы
-		        $.ajax({
-		        type: "POST", //Метод отправки
-		        url: "send.php", //путь до php фаила отправителя
-		        data: form_data,
-		        success: function() {
-		               //код в этом блоке выполняется при успешной отправке сообщения
-		               alert("Ваше сообщение отправлено!");
-		             }
-		        });
-		return false;
-		});
-	});
-</script>
-
-<!--  -->
-
-	<script src="jquery-1.7.2.min.js"></script>
-    
-    <script src="jquery-calculator-1-4.js"></script>
-    <script src="jquery-calculator-1-8.js"></script>
-
-<style type="text/css">
-    div.demo { padding: 10px !important; width: 300px;}
-    .ui-widget{font-size: 0.6em !important;}
-    </style>
-    <script>
- 
-    function calc(par){
-    // type = document.cl_form.type.value;
-    type2 = document.cl_form.type2.value;
-    type3 = document.cl_form.type3.value;
-    type7 = document.cl_form.type7.value;
-    type5 = document.cl_form.type5.value;
-    amount = document.cl_form.amount.value;
-    // amount2 = document.cl_form.amount2.value;
-    // amount3 = document.cl_form.amount3.value;
- 
-    //var summ;
-
-    summ = ( Number(type2) + Number(type3) + Number(type7) + Number(type5));
-    document.cl_form.summ.value=summ;
-
-    sunn = ( Number(type2));
-    document.cl_form.sunn.value=sunn;
-
-    supp = ( Number(type3));
-    document.cl_form.supp.value=supp;
-
-    suww = ( Number(type7));
-    document.cl_form.suww.value=suww;
-
-    suzz = ( Number(type5));
-    document.cl_form.suzz.value=suzz;
-
-    prices_seven = (1800*Number(amount));
-    document.cl_form.prices_seven.value=prices_seven;
-
-    prices_one = (2700*Number(amount));
-    document.cl_form.prices_one.value=prices_one;
-
-    prices_two = (4500*Number(amount));
-    document.cl_form.prices_two.value=prices_two;
-
-    prices_three = (3000*Number(amount));
-    document.cl_form.prices_three.value=prices_three;
-
-    prices_four = (5000*Number(amount));
-    document.cl_form.prices_four.value=prices_four;
-
-    prices_five = (3450*Number(amount));
-    document.cl_form.prices_five.value=prices_five;
-
-    prices_six = (5750*Number(amount));
-    document.cl_form.prices_six.value=prices_six;
-
-    // document.getElementById("typetd").innerHTML=type;
-    // document.getElementById("amounttd").innerHTML=amount;
-    // document.getElementById("amount2td").innerHTML=amount2;
-    // document.getElementById("summ").innerHTML=summ;
-    return false; 
-    }
-    </script>
-
-<!--  -->
-
-<script>
-function Selected_one(a) {
-        var label = a.value;
-        if (label==2289) {
-            document.getElementById("Block2").style.display='block';
-            document.getElementById("Block3").style.display='none';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type7').disabled = true;
-            document.getElementById('type5').disabled = true;
-            sull = (3);
-    		document.cl_form.sull.value=sull;
-
-        } else if (label==3815) {
-            document.getElementById("Block2").style.display='none';
-            document.getElementById("Block3").style.display='block';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type7').disabled = true;
-            document.getElementById('type5').disabled = true;
-            sull = (5);
-   			document.cl_form.sull.value=sull;
-
-        } else {
-            document.getElementById("Block2").style.display='none';
-            document.getElementById("Block3").style.display='none';
-            document.getElementById("block-show-seven").style.display='block';
-            document.getElementById('type2').disabled = false;
-            document.getElementById('type7').disabled = false;
-            document.getElementById('type5').disabled = false;
-            sull = (0);
-    		document.cl_form.sull.value=sull;
-        }
-         
-}
-
-// ////////////////////////////////////////////////////////
-
-function Selected_two(a) {
-        var label = a.value;
-        if (label==2640) {
-            document.getElementById("Block1").style.display='block';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type3').disabled = true;
-            document.getElementById('type7').disabled = true;
-            document.getElementById('type5').disabled = true;
-            sull = (3);
-   			document.cl_form.sull.value=sull;
-
-        } else {
-            document.getElementById("Block1").style.display='none';
-            document.getElementById("block-show-seven").style.display='block';
-            document.getElementById('type3').disabled = false;
-            document.getElementById('type7').disabled = false;
-            document.getElementById('type5').disabled = false;
-            sull = (0);
-   			document.cl_form.sull.value=sull;
-        }
-         
-}
-
-// ////////////////////////////////////////////////////////
-
-function Selected_three(a) {
-        var label = a.value;
-        if (label==3579) {
-            document.getElementById("Block4").style.display='block';
-            document.getElementById("Block5").style.display='none';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type3').disabled = true;
-            document.getElementById('type5').disabled = true;
-            sull = (3);
-   			document.cl_form.sull.value=sull;
-
-        } else if (label==5965) {
-            document.getElementById("Block4").style.display='none';
-            document.getElementById("Block5").style.display='block';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type3').disabled = true;
-            document.getElementById('type5').disabled = true;
-            sull = (5);
-   			document.cl_form.sull.value=sull;
-
-        } else {
-            document.getElementById("Block4").style.display='none';
-            document.getElementById("Block5").style.display='none';
-            document.getElementById("block-show-seven").style.display='block';
-            document.getElementById('type2').disabled = false;
-            document.getElementById('type3').disabled = false;
-            document.getElementById('type5').disabled = false;
-            sull = (0);
-   			document.cl_form.sull.value=sull;
-        }
-         
-}
-
-// ////////////////////////////////////////////////////////
-
-function Selected_four(a) {
-        var label = a.value;
-        if (label==3810) {
-            document.getElementById("Block6").style.display='block';
-            document.getElementById("Block7").style.display='none';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type3').disabled = true;
-            document.getElementById('type7').disabled = true;
-            sull = (3);
-   			document.cl_form.sull.value=sull;
-
-        } else if (label==6350) {
-            document.getElementById("Block6").style.display='none';
-            document.getElementById("Block7").style.display='block';
-            document.getElementById("block-show-seven").style.display='none';
-            document.getElementById('type2').disabled = true;
-            document.getElementById('type3').disabled = true;
-            document.getElementById('type7').disabled = true;
-            sull = (5);
-   			document.cl_form.sull.value=sull;
-
-        } else {
-            document.getElementById("Block6").style.display='none';
-            document.getElementById("Block7").style.display='none';
-            document.getElementById("block-show-seven").style.display='block';
-            document.getElementById('type2').disabled = false;
-            document.getElementById('type3').disabled = false;
-            document.getElementById('type7').disabled = false;
-            sull = (0);
-   			document.cl_form.sull.value=sull;
-        }
-         
-}
-
-
-</script>
 
 
 </body>
